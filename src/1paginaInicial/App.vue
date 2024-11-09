@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <a href="../assets/nave-logo.png" class="logo">
+      <a href="nave-logo.png" class="logo">
         <img scr="../assets/nave-logo.png" alt="Ícone de um foguete" />
       </a>
       <ul>
@@ -22,6 +22,8 @@
       <button>Saiba Mais</button>
     </section>
   </header>
+
+  <div class="seta"></div>
 
   <div class="intro">
     <div class="txt">
@@ -114,6 +116,16 @@ export default {
     height: auto;
     border-radius: 15px;
     object-fit: contain;
+  }
+
+  .seta {
+    z-index: 1;
+    position: relative;
+    bottom: 4rem;
+    width: 100%;
+    height: 400px;
+    clip-path: polygon(50% 25%, 100% 0, 100% 25%, 100% 25%, 50% 50%, 50% 50%, 50% 50%, 0 25%, 0 0);
+    background-color: #1f2d67;
   }
 
   .topics {
@@ -211,6 +223,6 @@ export default {
   .sub {
     text-align: center;
     align-content: center
-  }
+  }
 
 </style>
