@@ -28,22 +28,22 @@
   <div class="intro">
     <div class="txt">
       <h3>BEM-VINDO AO <span><br> NOSSO SITE</span></h3>
-      <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui
-      lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci
-      elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur
-      lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut
-      nec tortor. Curabitur vel erat quis diam semper</p>
+      <p>Aqui, você encontrará tudo sobre as missões Voyager 1 e Voyager 2, lançadas na década de 1970 com o objetivo de explorar os confins do nosso sistema solar e além. 
+        Essas sondas pioneiras, que continuam suas jornadas por bilhões de quilômetros, são responsáveis por algumas das descobertas mais incríveis da ciência espacial. 
+        Ao longo das décadas, elas forneceram dados valiosos sobre os planetas, luas e o ambiente espacial, revolucionando nosso entendimento do universo. 
+        Descubra também o legado do disco de ouro que as Voyager carregam consigo, um "mensageiro" da Terra com sons, imagens e informações sobre nossa civilização, destinado a possíveis formas de vida extraterrestre. 
+</p>
     </div>
     <img src="../assets/Voyager1.jpg">
   </div>
 
   <div class="topics">
     <h1>VOYAGERS: MISSÃO AO<span><br> DESCONHECIDO</span></h1>
-    <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui
-    lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci
-    elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur
-    lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut
-    nec tortor. Curabitur vel erat quis diam semper.</p>
+    <p>As sondas Voyager têm a missão de explorar os confins do sistema solar e além, coletando dados sobre os planetas e suas luas. 
+      Elas também buscam entender o ambiente interplanetário e interstelar. 
+      Com suas mensagens para possíveis civilizações, representam o esforço humano de comunicação cósmica. 
+      Suas viagens são um marco na busca pelo desconhecido e pelo entendimento do universo.
+</p>
 
     <div class="imagens">
       <img class='imagem1' src="../assets/Jupiter.jpg"/>
@@ -52,7 +52,11 @@
     </div>
 
     <h3>A Grande Conjunção</h3>
-    <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+    <p>A Grande Conjunção é um fenômeno astronômico que ocorre quando os planetas Júpiter e Saturno se alinham no céu, vistos da Terra. 
+      Esse evento é raro e acontece, em média, a cada 20 anos. Durante a conjunção, os dois planetas parecem estar muito próximos um do outro, criando uma imagem impressionante no céu noturno. 
+      A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
+      A observação desse fenômeno é uma oportunidade única de admirar a dança dos gigantes gasosos. A Grande Conjunção simboliza também a harmonia cósmica e a beleza dos movimentos planetários.</p>
+
     <button><a>Veja mais</a></button>
   </div>
 
