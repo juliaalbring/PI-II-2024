@@ -241,12 +241,15 @@ export default {
     clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 0 0, 0 0);
     background-color: #080e22; 
     display: flex;
+    justify-content: center;
+    gap: 10%;
   }
 
   .hub h1 {
     color: #2552ea;
     font-size: 3rem;
     margin-bottom: 3rem;
+    text-align: center;
   }
 
   .hub p {
@@ -255,9 +258,14 @@ export default {
     margin-bottom: 3rem;
   }
 
-  .sub {
+  .sub button {
     text-align: center;
-    align-content: center
+    align-items: center;
+  }
+
+  .sub {
+    align-content: center;
+    width: 35%;
   }
 
 </style>
