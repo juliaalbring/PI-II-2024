@@ -65,21 +65,33 @@ nav ul li a:hover {
     margin-top: 10%;
     margin-right: 30%;
     font-family: "Onest", sans-serif;
+    font-weight: 300;
 }
 
 .hero button {
-    border-radius: 2.5rem;
-    padding: 1.25rem 2.5rem;
     background-color: transparent;
     color: white;
-    border: 0.125rem solid white;
-    margin-top: 10%;
+    padding: 10px 20px; 
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 26px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+    margin-left: 46%;
+    margin-top: 5%;
+    cursor: pointer; 
 }
 
 .hero span {
-    text-decoration: solid underline #C898EC 5px;
-    border-radius: 10px;
+    font-weight: 700; 
+    color: #FFFFFF; 
+    border-bottom: 4px solid #d8b4ff;
 }
+
 
 .hero p {
     font-size: 1.5rem;
@@ -87,14 +99,15 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
     font-family: "Onest", sans-serif;
-    margin-top: 10%;
     margin-right: 30%; 
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 footer{
     margin-top: 2rem;
     background-color: black;
-    height: 47vh;
+    height: 50vh;
     color: whitesmoke;
     display: flex;
 }

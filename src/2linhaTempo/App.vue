@@ -56,14 +56,14 @@ export default {
 
 <style scoped>
 
-.linha {
+/*.linha {
     position: absolute;
-    width: 2px; /* Espessura da linha */
-    height: 100vh; /* Altura total da tela */
+    width: 2px; /* Espessura da linha 
+    height: 100vh; /* Altura total da tela
     background-color: black;
     top: 0;
-    left: 50%; /* Centraliza horizontalmente */
-    transform-origin: top; /* Define o ponto de origem da transformação */
-}
+    left: 50%; /* Centraliza horizontalmente 
+    transform-origin: top; /* Define o ponto de origem da transformação 
+}*/
 
 </style>

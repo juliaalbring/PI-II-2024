@@ -18,8 +18,8 @@
     </nav>
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
-      <p>Descubra um dos maiores projetos humanos para a exploração espacial</p>
-      <button>Saiba Mais</button>
+      <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
+      <button>↓</button>
     </section>
   </header>
 
@@ -199,6 +199,18 @@ export default {
     color: #C898EC;
   }
 
+  .topics button{
+    background-color: #A32CC4;
+    color: white;
+    width: 250px;
+    height: auto;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer; 
+    font-family: Arial, sans-serif;
+  }
   .imagem1{
     margin-top: 40px;
     margin-left: 70px;
