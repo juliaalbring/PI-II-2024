@@ -2,7 +2,7 @@
   <header>
     <nav>
       <a href="nave-logo.png" class="logo">
-        <img scr="../assets/nave-logo.png" alt="Ícone de um foguete" />
+        <img src="../../public/nave-logo.png" alt="Logo do site" />
       </a>
       <ul>
         <li><a href="index" class="active">Página Principal</a></li>
@@ -13,7 +13,7 @@
         <li><a href="jogo">Jogo</a></li>
       </ul>
       <a href="#" class="profile">
-        <img src="" alt="Ícone de um perfil" />
+        <img src="../../public/profile.png" alt="Ícone de um perfil" />
       </a>
     </nav>
     <section class="hero">
@@ -51,25 +51,30 @@
       <img class="imagem3" src="../assets/DiscoOuro.jpg"/>
     </div>
 
-    <h3>A Grande Conjunção</h3>
-    <p>A Grande Conjunção é um fenômeno astronômico que ocorre quando os planetas Júpiter e Saturno se alinham no céu, vistos da Terra. 
-      Esse evento é raro e acontece, em média, a cada 20 anos. Durante a conjunção, os dois planetas parecem estar muito próximos um do outro, criando uma imagem impressionante no céu noturno. 
-      A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
-      A observação desse fenômeno é uma oportunidade única de admirar a dança dos gigantes gasosos. A Grande Conjunção simboliza também a harmonia cósmica e a beleza dos movimentos planetários.</p>
-
-    <button><a>Veja mais</a></button>
+    <div class="topic-txt">
+      <hr>
+      <div>
+      <h3>A Grande Conjunção</h3>
+      <p>
+        A Grande Conjunção é um fenômeno astronômico que ocorre quando os planetas Júpiter e Saturno se alinham no céu, vistos da Terra. 
+        Esse evento é raro e acontece, em média, a cada 20 anos. Durante a conjunção, os dois planetas parecem estar muito próximos um do outro, criando uma imagem impressionante no céu noturno. 
+        A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
+        A observação desse fenômeno é uma oportunidade única de admirar a dança dos gigantes gasosos. A Grande Conjunção simboliza também a harmonia cósmica e a beleza dos movimentos planetários.</p>
+      </div>
+      <button><a>Veja mais</a></button>
+    </div>
   </div>
 
   <div class="hub">
     <div class="sub">
       <h1>Nosso jogo</h1>
       <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
-      <button><a href="#">Saiba mais</a></button>
+      <a href="#"><button>Saiba mais</button></a>
     </div>
     <div class="sub">
       <h1>Galactic Hub</h1>
       <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
-      <button><a href="#">Saiba mais</a></button>
+      <a href="#"><button>Saiba mais</button></a>
     </div>
   </div>
 
@@ -146,16 +151,6 @@ export default {
     object-fit: contain;
   }
 
-  .seta {
-    z-index: 1;
-    position: relative;
-    bottom: 6.5rem;
-    width: 100%;
-    height: 400px;
-    clip-path: polygon(50% 25%, 100% 0, 100% 25%, 100% 25%, 50% 50%, 50% 50%, 50% 50%, 0 25%, 0 0);
-    background-color: #1f2d67;
-  }
-
   .topics {
     background-color: #111C41;
     width: 100%;
@@ -170,6 +165,15 @@ export default {
     justify-content: center;
   }
 
+  .topics .topic-txt{
+    display: flex;
+    margin: 5%
+  }
+
+  .topics .topic-txt div{
+    width: 65%;
+  }
+
   .topics h1 {
     color: #F0F0FA;
     font-size: 3rem;
@@ -178,12 +182,13 @@ export default {
     line-height: 1.2; 
     text-align: center;
     overflow: hidden; 
+    font-weight: normal;
   }
 
   .topics h3 {
     color:#F0F0FA;
     font-size: 40px;
-    margin-left: 10%;
+    margin-left: 6%;
     margin-top: 5%;
   }   
 
@@ -191,9 +196,8 @@ export default {
     color: #F0F0FA;
     font-size: 1.3125rem;
     line-height: 1.5;
-    margin: 0 10%;
+    margin: 0 6%;
     padding: 0;
-    max-width: auto;
     overflow: hidden;
     text-align: justify;
   }
@@ -212,14 +216,26 @@ export default {
     background-color: #A32CC4;
     color: white;
     width: 250px;
-    height: auto;
+    height: 75px;
     padding: 10px 20px;
     border: none; 
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 50px;
+    font-size: 22px;
     cursor: pointer; 
     font-family: Arial, sans-serif;
+    margin: 10%;
   }
+
+  .topics hr{
+    width: 0.5625rem;
+    background-color: #870EE1;
+    margin: 0.5rem 0.2rem 0 0;
+    height: 22.625rem;
+    border: none;
+    border-radius: 10px;
+
+  }
+
   .imagem1{
     margin-top: 40px;
     margin-left: 70px;
@@ -246,8 +262,10 @@ export default {
     clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 0 0, 0 0);
     background-color: #080e22; 
     display: flex;
+    text-align: center;
     justify-content: center;
     gap: 10%;
+    margin-bottom: -2rem;
   }
 
   .hub h1 {
@@ -263,14 +281,23 @@ export default {
     margin-bottom: 3rem;
   }
 
-  .sub button {
-    text-align: center;
-    align-items: center;
+  .sub button{
+    background-color: #2552EA;
+    color: white;
+    width: 250px;
+    height: 75px;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer; 
+    font-family: Arial, sans-serif;
+    margin: 10%;
   }
 
   .sub {
-    align-content: center;
     width: 35%;
+    margin-bottom: 7%;
   }
 
 </style>
