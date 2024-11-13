@@ -104,10 +104,15 @@ export default {
 <style scoped>
 
   .intro {
+    margin-top: -32rem;
+    padding-top: 13rem;
+    padding-bottom: 90px;
+    clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 0, 0 0);
     background-color: #080E22;
     width: 100%;
     padding-bottom: 90px;
     display: flex;
+
   }
 
   .txt {
@@ -144,7 +149,7 @@ export default {
   .seta {
     z-index: 1;
     position: relative;
-    bottom: 4rem;
+    bottom: 6.5rem;
     width: 100%;
     height: 400px;
     clip-path: polygon(50% 25%, 100% 0, 100% 25%, 100% 25%, 50% 50%, 50% 50%, 50% 50%, 0 25%, 0 0);
