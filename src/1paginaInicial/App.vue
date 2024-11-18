@@ -2,7 +2,7 @@
   <header>
     <nav>
       <a href="#" class="logo">
-        <img scr="../../public/assets/nave-logo.png" alt="Logo do site" />
+        <img src="../../public/assets/nave-logo.png" alt="Logo do site" />
       </a>
       <ul>
         <li><a href="index" class="active">Página Principal</a></li>

@@ -10,7 +10,7 @@ html{
 
 header {
     height: 93vh;
-    background: url('./fundo-header.png');
+    background-image: url('../public/assets/fundo-header.png');
     background-size: cover;
 }
 
