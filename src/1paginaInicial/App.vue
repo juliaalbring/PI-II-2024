@@ -19,13 +19,13 @@
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
-      <button>↓</button>
+      <button><a href="#intro">↓</a></button>
     </section>
   </header>
 
   <div class="seta"></div>
 
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="txt">
       <h3>BEM-VINDO AO <span><br> NOSSO SITE</span></h3>
       <p>Aqui, você encontrará tudo sobre as missões Voyager 1 e Voyager 2, lançadas na década de 1970 com o objetivo de explorar os confins do nosso sistema solar e além. 
