@@ -46,9 +46,16 @@
     </p>
 
     <div class="imagens">
-      <img class='imagem1' src="../../public/assets/Jupiter.jpg"/>
-      <img class="imagem2" src="../../public/assets/voyager2.png"/>
-      <img class="imagem3" src="../../public/assets/DiscoOuro.jpg"/>
+      <div class="containerimagem">
+        <img class='imagem3' src="../../public/assets/Jupiter.jpg"/>
+      </div>
+      <div class="containerimagem">
+        <img class="imagem2" src="../../public/assets/voyager2.png"/>
+      </div>
+      <div class="containerimagem">
+        <img class="imagem1" src="../../public/assets/DiscoOuro.jpg"/>
+      </div>
+
     </div>
 
     <div class="topic-txt">
@@ -61,7 +68,7 @@
         A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
         A observação desse fenômeno é uma oportunidade única de admirar a dança dos gigantes gasosos. A Grande Conjunção simboliza também a harmonia cósmica e a beleza dos movimentos planetários.</p>
       </div>
-      <button><a>Veja mais</a></button>
+      <button><a href="historia">Veja mais</a></button>
     </div>
   </div>
 
@@ -70,12 +77,12 @@
       <h1>Nosso jogo</h1>
       <p> O nosso jogo é uma forma interativa e lúdica de representar o trajeto das Sondas Voyagers ao longo do vasto espaço, destacando as descobertas e marcos importantes dessa jornada científica incrível. Ao longo do jogo, os jogadores podem explorar o percurso das sondas, aprender sobre os planetas e os fenômenos espaciais que elas encontraram, e vivenciar de perto as aventuras dessas missões históricas. Ele torna o aprendizado mais dinâmico, permitindo que os usuários sintam-se parte dessa exploração interplanetária, tornando o conteúdo não apenas informativo, mas também envolvente. A cada etapa, o jogador adquire conhecimento sobre o universo e a importância das sondas na expansão da nossa compreensão do cosmos. Ao jogar, você poderá se aprofundar nos detalhes da missão, ao mesmo tempo em que se diverte e descobre novos aspectos dessa grande jornada!
 </p>
-      <a href="#"><button>Saiba mais</button></a>
+      <a href="jogo"><button>Saiba mais</button></a>
     </div>
     <div class="sub">
       <h1>Galactic Hub</h1>
       <p> O fórum do nosso site é o espaço ideal para todos os entusiastas das sondas Voyager se reunirem e trocarem ideias sobre as incríveis missões dessas naves. Aqui, os membros podem discutir os avanços científicos, as descobertas mais recentes e as teorias sobre o que essas sondas ainda podem nos revelar. Além disso, o fórum oferece um ambiente para compartilhar curiosidades, análises técnicas e até mesmo histórias pessoais relacionadas a esse marco da exploração espacial. Seja você um cientista, um estudante ou apenas um curioso, aqui é possível interagir com outros apaixonados pelo tema. O espaço é aberto para todos os tipos de contribuições, desde debates profundos até dicas e recursos sobre as Voyagers. Não importa o nível de conhecimento, o importante é a troca de informações e a celebração da exploração do desconhecido.</p>
-      <a href="#"><button>Saiba mais</button></a>
+      <a href="forum"><button>Saiba mais</button></a>
     </div>
   </div>
 
@@ -165,6 +172,7 @@ export default {
   .imagens {
     display: flex;
     justify-content: center;
+    flex-direction:row;
   }
 
   .topics .topic-txt{
@@ -238,19 +246,49 @@ export default {
 
   }
 
-  .imagem1{
-    margin-top: 40px;
-    margin-left: 70px;
-    width: 450px;
-    height: 600px;
-  }
+.containerimagem{
+  width: 28%;
+  height:40rem;
+  overflow:hidden;
+}
 
-  .imagem2, .imagem3{
-    margin-top: 40px;
-    margin-left: 100px;
-    width: 270px;
-    height: 600px;
-  }
+.imagem3 {
+  margin-left: 7rem;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s
+}
+
+.imagem3:hover {
+  transform: scale(1.3, 1.2);
+}
+.imagem2 {
+  margin-left: 7rem;
+  width: 80%;
+  height: 100%;
+  transition: 0.1s
+}
+
+.imagem2:hover {
+  transform: scale(1.2, 1.2);
+}
+.imagem1 {
+  margin-left: 7rem;
+  width: 65%;
+  height: 100%;
+  transition: 0.1s
+}
+
+.imagem1:hover {
+  transform: scale(1.1, 1.2);
+}
+
+.containerimagem:hover{
+  width: 30%;
+  height:40rem;
+  overflow:hidden;
+  transition: 0.2s
+}
 
   .triangulo {
     width: 100%;

@@ -9,28 +9,28 @@ module.exports = {
       entry: 'src/1paginaInicial/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Index Page',
+      title: 'BeyondGalaxy',
       chunks: ['chunk-vendors', 'chunk-common', 'index']
     },
     linha: {
       entry: 'src/2linhaTempo/main.js',
       template: 'public/linha.html',
       filename: 'linha.html',
-      title: 'linha Page',
+      title: 'BeyondGalaxy - Linha do Tempo',
       chunks: ['chunk-vendors', 'chunk-common', 'linha']
     },
     historia: {
       entry: 'src/3historiaSondas/main.js',
       template: 'public/historia.html',
       filename: 'historia.html',
-      title: 'historia Page',
+      title: 'BeyondGalaxy - História das Sondas',
       chunks: ['chunk-vendors', 'chunk-common', 'historia']
     },
     forum: {
       entry: 'src/4forumSondas/main.js',
       template: 'public/forum.html',
       filename: 'forum.html',
-      title: 'forum Page',
+      title: 'BeyondGalaxy - Fórum',
       chunks: ['chunk-vendors', 'chunk-common', 'forum']
     },
     artigo: {
@@ -44,7 +44,7 @@ module.exports = {
       entry: 'src/6jogoSondas/main.js',
       template: 'public/jogo.html',
       filename: 'jogo.html',
-      title: 'jogo Page',
+      title: 'BeyondGalaxy - Jogo',
       chunks: ['chunk-vendors', 'chunk-common', 'jogo']
     },
 
