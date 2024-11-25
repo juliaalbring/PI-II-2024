@@ -10,7 +10,7 @@ html{
 
 header {
     height: 93vh;
-    background: url('./fundo-header.png');
+    background-image: url('./assets/fundo-header.png');
     background-size: cover;
 }
 
@@ -94,6 +94,10 @@ nav ul li a:hover {
     margin-left: 46%;
     margin-top: 5%;
     cursor: pointer; 
+}
+
+.hero a {
+    color: white
 }
 
 .hero span {

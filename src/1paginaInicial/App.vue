@@ -45,24 +45,23 @@
       Suas viagens são um marco na busca pelo desconhecido e pelo entendimento do universo.
     </p>
 
-    <div class="imagens">
-      <div class="containerimagem">
-        <img class='imagem3' src="../../public/assets/Jupiter.jpg"/>
+    <div class="allimagesdiv">
+      <div class="singlediv" data-text="TEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOv">
+        <img class='image' src="../../public/assets/Jupiter.jpg"/>
       </div>
-      <div class="containerimagem">
-        <img class="imagem2" src="../../public/assets/voyager2.png"/>
+      <div class="singlediv">
+        <img class="image" src="../../public/assets/voyager2.png"/>
       </div>
-      <div class="containerimagem">
-        <img class="imagem1" src="../../public/assets/DiscoOuro.jpg"/>
+      <div class="singlediv">
+        <img class="image" src="../../public/assets/DiscoOuro.jpg"/>
       </div>
-
     </div>
 
     <div class="topic-txt">
       <hr>
       <div>
       <h3>A Grande Conjunção</h3>
-      <p>
+      <p id="texto">
         A Grande Conjunção é um fenômeno astronômico que ocorre quando os planetas Júpiter e Saturno se alinham no céu, vistos da Terra. 
         Esse evento é raro e acontece, em média, a cada 20 anos. Durante a conjunção, os dois planetas parecem estar muito próximos um do outro, criando uma imagem impressionante no céu noturno. 
         A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
@@ -112,10 +111,49 @@ export default {
   name: 'App',
   components: {}
 };
-
 </script>
 
 <style scoped>
+.image{
+    width: 30rem;
+    transition: 1s;
+    transform: scale(1.3, 1.3);
+}
+
+.image:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.imageclicked {
+    transform: scale(1, 1);
+    transition: 1s; 
+}
+
+
+.allimagesdiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.singlediv {
+    height: 27rem;
+    width: 23rem;
+    margin-left: 3rem;
+    overflow: hidden;
+    transition: width 0.4s, margin-left 1s, border 1s; /* Transição para largura e margem */
+}
+
+.singlediv:hover {
+    margin-left: 3rem;
+    width: 26rem;
+    border: 0.1rem solid rgb(0, 255, 247);
+}
+
+.clicked {
+    margin-left: 2rem;
+    width: 30rem;
+    border: 0.3rem solid rgb(0, 255, 247);
+}
 
   .intro {
     margin-top: -32rem;
@@ -246,7 +284,7 @@ export default {
 
   }
 
-.containerimagem{
+.singlediv{
   width: 28%;
   height:40rem;
   overflow:hidden;
@@ -283,7 +321,7 @@ export default {
   transform: scale(1.1, 1.2);
 }
 
-.containerimagem:hover{
+.singlediv:hover{
   width: 30%;
   height:40rem;
   overflow:hidden;
