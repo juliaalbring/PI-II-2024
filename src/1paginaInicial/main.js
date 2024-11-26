@@ -5,9 +5,8 @@ createApp(paginaInicial).mount('#app')
 
 document.querySelectorAll('.singlediv').forEach(div => {
     div.addEventListener('click', function () {
-        document.querySelectorAll('.singlediv').forEach(d => d.classList.remove('clicked')); // Pra não parecer ter dois selecionados
+        document.querySelectorAll('.singlediv').forEach(d => d.classList.remove('clicked')); // Pra não parecer ter dois selecionsdas
 
-        console.log("Clico")
         document.querySelectorAll('.image').forEach(img => img.classList.remove('imageclicked'));
 
         this.classList.add('clicked');

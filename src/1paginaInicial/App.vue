@@ -46,13 +46,18 @@
     </p>
 
     <div class="allimagesdiv">
-      <div class="singlediv" data-text="TEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOv">
+      <div class="singlediv" data-text="
+A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.">
         <img class='image' src="../../public/assets/Jupiter.jpg"/>
       </div>
-      <div class="singlediv">
+      <div class="singlediv" data-text="A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.">
         <img class="image" src="../../public/assets/voyager2.png"/>
       </div>
-      <div class="singlediv">
+      <div class="singlediv" data-text="O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres.
+
+Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos.
+
+Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.">
         <img class="image" src="../../public/assets/DiscoOuro.jpg"/>
       </div>
     </div>
@@ -61,11 +66,11 @@
       <hr>
       <div>
       <h3>A Grande Conjunção</h3>
-      <p id="texto">
-        A Grande Conjunção é um fenômeno astronômico que ocorre quando os planetas Júpiter e Saturno se alinham no céu, vistos da Terra. 
-        Esse evento é raro e acontece, em média, a cada 20 anos. Durante a conjunção, os dois planetas parecem estar muito próximos um do outro, criando uma imagem impressionante no céu noturno. 
-        A última grande conjunção ocorreu em dezembro de 2020, marcando a proximidade mais visível em quase 400 anos. 
-        A observação desse fenômeno é uma oportunidade única de admirar a dança dos gigantes gasosos. A Grande Conjunção simboliza também a harmonia cósmica e a beleza dos movimentos planetários.</p>
+      <div class="divtext1">
+        <p id="texto">
+        </p>
+      </div>
+      
       </div>
       <button><a href="historia">Veja mais</a></button>
     </div>
@@ -114,14 +119,15 @@ export default {
 </script>
 
 <style scoped>
+.divtext1{
+  width: 170rem;
+  overflow: visible;
+}
+
 .image{
     width: 30rem;
     transition: 1s;
     transform: scale(1.3, 1.3);
-}
-
-.image:hover{
-    transform: scale(1.2, 1.2);
 }
 
 .imageclicked {
@@ -144,15 +150,14 @@ export default {
 }
 
 .singlediv:hover {
-    margin-left: 3rem;
-    width: 26rem;
-    border: 0.1rem solid rgb(0, 255, 247);
+    width: 23rem;
+    border: 0.1rem solid rgb(255, 255, 255);
 }
 
 .clicked {
     margin-left: 2rem;
     width: 30rem;
-    border: 0.3rem solid rgb(0, 255, 247);
+    border: 0.3rem solid rgb(255, 255, 255);
 }
 
   .intro {
@@ -261,8 +266,8 @@ export default {
   }
 
   .topics button{
-    background-color: #A32CC4;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     width: 250px;
     height: 75px;
     padding: 10px 20px;
@@ -347,7 +352,7 @@ export default {
   }
 
   .hub h1 {
-    color: #2552ea;
+    color: #cdd4eb;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -360,8 +365,8 @@ export default {
   }
 
   .sub button{
-    background-color: #2552EA;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     width: 250px;
     height: 75px;
     padding: 10px 20px;
