@@ -54,7 +54,30 @@
   <div class="div2"><p class="text3">
     ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
     <img src="../../public/assets/cosmos.png" class="imagem4">
-  </div></body>
+  </div>
+
+<section class="grandtour">
+  <div>
+  <h1>GRAND TOUR</h1>
+  <h2>OBJETIVOS INICIAIS</h2>
+  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  </div>
+  <hr>
+  <img src="../../public/assets/cosmos2.png">
+</section>
+
+<section class="grandtour">
+  <img src="../../public/assets/voyagerhistoria.png">
+  <hr>
+  <div>
+  <h1>SONDA VOYAGER</h1>
+  <h2>EXTENSÃO DA MISSÃO</h2>
+  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  </div>
+</section>
+
+
+</body>
     <footer>
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
@@ -163,7 +186,7 @@ body *{
 
 .div1{
     background-color: #080E22;
-    height: 15rem;
+    height: 17rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -189,7 +212,7 @@ body *{
 .text3{
     background-color: #080E22;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 4% 5% 5% 0;
     width: 32rem;
 }
@@ -198,6 +221,7 @@ body *{
     background-color: #080E22;
     justify-content: center;
     margin-top: -2.3rem;
+    height: 25rem;
 }
 
 .imagem4{
@@ -228,5 +252,52 @@ body *{
 
 .div-esq, .div-dir{
   display: flex;
+}
+
+.grandtour{
+  text-align: center;
+  margin: 7% 2% 10% 4.2%;
+  display: flex;
+  align-items: center;
+}
+
+.grandtour img{
+  scale: 95%;
+}
+
+.grandtour p{
+  text-align: justify;
+  margin: 5% 5% 0 0;
+  color: white;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.grandtour hr{
+    width: 0.5625rem;
+    background-color: #C898EC;
+    margin: 1rem 0.8rem 0 0.8rem;
+    height: 23.9rem;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.grandtour h1{
+  color: white;
+  font-size: 3.4rem;
+  font-weight: 235;
+  margin: 5% 0 0 0;
+}
+.grandtour h2{
+    margin: 0;
+    color: #C898EC;
+    font-size: 2.1rem;
+    font-weight: 175;
+}
+
+.grandtour div{
+  width: 45%;
+  margin-left: 2%;
 }
 </style>
