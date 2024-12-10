@@ -352,7 +352,7 @@ export default {
   }
 
   .hub h1 {
-    color: #cdd4eb;
+    color: #2552EA;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;

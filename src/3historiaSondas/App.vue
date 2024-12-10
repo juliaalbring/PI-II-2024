@@ -19,37 +19,41 @@
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
-      <button>↓</button>
+      <button><a href="#intro">↓</a></button>
     </section>
   </header>
 
   <div class="seta"></div>
 
 <body>
-<section class="div-esq">
+<section  class="intro" id="intro">
+<div class="div-esq">
   <div>
   <h1 class="title1">ORIGENS</h1>
   <h2 class="title2">GUERRA FRIA</h2>
   </div>
   <center><hr></center>
-</section>
+</div>
   <p class="text1">ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   <img src="../../public/assets/guerrafria.png" class="imagem1">
 
-<section class="div-dir">
+<div class="div-dir">
   <center><hr></center>
   <div>
   <h1 class="title3">CARL SAGAN</h1>
   <h2 class="title4">A FIGURA PRINCIPAL</h2>
   </div>
-</section>
+</div>
   <p class="text2">ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   <img src="../../public/assets/carlsagan.png" class="imagem2">
+</section>
 
   <img src="../../public/assets/DiscoOuro2.png" class="imagem3">
   <div class="div1">
+    <center class="centro-disco">
     <h1 class="title5">DISCO DE OURO</h1>
     <h1 class="title6">UMA MENSAGEM PARA O UNIVERSO</h1>
+    </center>
   </div>
   <div class="div2"><p class="text3">
     ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
@@ -82,7 +86,7 @@
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
       <hr>
-      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+      <p>Descubra um dos maiores projetos humanos para exploração espacial.
       </p>
       <img src="../../public/assets/IFC.png" alt="Logo IFC Concórdia">
   </div>
@@ -120,6 +124,10 @@ body *{
     box-sizing: border-box;
     font-family: "Onest", sans-serif;
     font-weight: 100;
+}
+
+.intro{
+  margin-left: 10%;
 }
 
 .title1{
@@ -192,6 +200,11 @@ body *{
     justify-content: center;
     margin-top: -0.3rem;
 }
+
+.centro-disco{
+  background-color: #080E22;
+}
+
 .title5{
     background-color: #080E22;
     color: white;
@@ -201,11 +214,9 @@ body *{
     font-weight: 235;
 }
 .title6{
-    background-color: #080E22;
+  background-color: #080E22;
     color: #2552EA;
-    margin-top: 10rem;
     font-size: 2rem;
-    margin-left: -32%;
     text-align: center;
     font-weight: 235;
 }
