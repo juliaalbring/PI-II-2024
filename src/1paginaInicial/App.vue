@@ -266,8 +266,7 @@ export default {
   }
 
   .topics button{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #2552EA;
     width: 250px;
     height: 75px;
     padding: 10px 20px;
@@ -277,6 +276,10 @@ export default {
     cursor: pointer; 
     font-family: Arial, sans-serif;
     margin: 10%;
+  }
+
+  .topics a{
+    color: white;
   }
 
   .topics hr{
@@ -365,8 +368,8 @@ export default {
   }
 
   .sub button{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #2552EA;
+    color: white;
     width: 250px;
     height: 75px;
     padding: 10px 20px;
@@ -375,7 +378,7 @@ export default {
     font-size: 22px;
     cursor: pointer; 
     font-family: Arial, sans-serif;
-    margin: 10%;
+    margin: 8%;
   }
 
   .sub {

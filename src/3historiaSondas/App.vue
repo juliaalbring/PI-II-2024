@@ -127,7 +127,8 @@ body *{
 }
 
 .intro{
-  margin-left: 10%;
+  margin-left: 5%;
+  justify-content: space-evenly
 }
 
 .title1{

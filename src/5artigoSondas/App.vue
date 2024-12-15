@@ -100,6 +100,7 @@ export default {
 }
 
 .article button{
+border: none;
   margin-top: 10%;
   background-color: #2552EA;
   width: 24.8rem;
