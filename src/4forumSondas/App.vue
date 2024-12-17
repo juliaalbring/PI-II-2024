@@ -24,7 +24,62 @@
   </header>
 
   <div class="seta"></div>
+  
+  <section class="destaques">
+        <h2>Destaques</h2>
+        <div class="destaques-container">
+            <div class="destaque">
+                <img src="../../public/assets/cosmos2.png" alt="The Road Ahead">
+                <div class="texto">
+                    <h3>The Road Ahead</h3>
+                    <p>William Wong - Outubro 8, 2023</p>
+                </div>
+            </div>
+            <div class="destaque">
+                <img src="../../public/assets/cosmos2.png" alt="From Top Down">
+                <div class="texto">
+                    <h3>From Top Down</h3>
+                    <p>Mark Rogers - Outubro 8, 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="topicos">
+        <h2>Tópicos</h2>
+        <div class="topicos-container">
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Forum Topic">
+                <h4>Forum Topic</h4>
+                <p>William Wong - 01/10/2023</p>
+            </div>
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Topic1">
+                <h4>Topic1</h4>
+                <p>Mark Rogers - 01/10/2023</p>
+            </div>
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Topic2">
+                <h4>Topic2</h4>
+                <p>Mark Rogers - 01/10/2023</p>
+            </div>
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Topic3">
+                <h4>Topic3</h4>
+                <p>William Wong - 01/10/2023</p>
+            </div>
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Topic4">
+                <h4>Topic4</h4>
+                <p>Mark Rogers - 01/10/2023</p>
+            </div>
+            <div class="topico">
+                <img src="../../public/assets/cosmos2.png" alt="Topic5">
+                <h4>Topic5</h4>
+                <p>Mark Rogers - 01/10/2023</p>
+            </div>
+        </div>
+    </section>
     <footer>
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
@@ -56,5 +111,94 @@ export default {
 </script>
 
 <style scoped>
+
+.destaques h2,
+.topicos h2 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #ffffff;
+    color: white;
+}
+.destaques {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.destaques h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.destaques-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+.destaque {
+    position: relative;
+    flex: 1;
+}
+
+.destaque img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+
+.texto {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #ffffff;
+}
+
+.topicos {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.topicos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.topicos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 0 2rem;
+}
+
+.topico {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.topico img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.topico h4 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.topico p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+
 
 </style>
