@@ -99,6 +99,7 @@
     height: 40rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .introduction_left_div{
@@ -137,7 +138,7 @@
 }
 
 .introduction_button_div{
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -167,7 +168,10 @@
 }
 
 .introduction_disco_de_ouro{
-    background-image: url(App_Images/disco_de_ouro_png.png);
-    width: 100%;
-    height: auto;
+    margin-left: 2rem;
+    background-image: url(App_Images/disco_de_ouro_png.jpeg);
+    width: 19rem;
+    height: 19rem;
+    background-size: cover;
+    background-position: center;
 }
