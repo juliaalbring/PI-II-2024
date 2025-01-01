@@ -95,13 +95,109 @@
   <img src="../../public/assets/netuno.png">
 </section>
 
-<h2 class="titulo-centro">1990</h2>
-
 <article>
+
+<h2>1990</h2>
+
 <div class="cima"></div>
 </article>
 
 </center>
+
+<section class="descanso">
+<article>
+  <div>
+  <h1>O Pálido Ponto Azul</h1>
+  <p>Basicamente aqui vai ter um texto faland do pálido ponto azul, eessa área vai servir pro site não ficar muito corrido, dai aqui fazer ser uma área de “descanso”, que não vai ter tanto conteúdo escrito, enquanto também fica com uma cor diferente do resto do site.</p>
+  </div>
+  <img src="../../public/assets/pontoazul.png">
+</article>
+
+<article>
+<hr><h1>Conquistas das Voyagers - Dados de 1990</h1><hr>
+</article>
+<article>
+<img src="../../public/assets/linhasonda.png" class="sonda-descanso" alt="Sonda Voyager I">
+</article>
+
+</section>
+
+<center>
+
+<article>
+<div class="cima"></div>
+
+<h2>1990</h2>
+</article>
+
+</center>
+
+<center>
+<section class="linha-esq">
+<div class="texto">
+  <h1 class="titulo">Objeto mais distante</h1>
+  <p>Dai um texto explicatório falando um pouco sobre quando elas foram lançadas e pá, uns negócio bem básico mesmo, mas que dê pelo menos 1 parágrafo de 4 linhas pq precisa ficar bonito aqui, e assim dá um tamanho bom.</p>
+</div>
+  <hr>
+  <div class="esq"></div>
+  <hr>
+  <h2>1998</h2>
+  <img src="../../public/assets/linhasonda.png">
+</section>
+
+<section class="linha-dir">
+  <img src="../../public/assets/jupiter.png">
+  <h2>2004</h2>
+  <hr>
+  <div class="dir"></div>
+  <hr>
+  <div class="texto">
+  <h1 class="titulo">Heliosheath</h1>
+  <p>Dai um texto explicatório falando um pouco sobre quando elas foram lançadas e pá, uns negócio bem básico mesmo, mas que dê pelo menos 1 parágrafo de 4 linhas pq precisa ficar bonito aqui, e assim dá um tamanho bom.</p>
+</div>  
+
+</section>
+
+</center>
+<center class="center2">
+<section class="linha-esq">
+<div class="texto">
+  <h1 class="titulo">Heliopausa</h1>
+  <p>Dai um texto explicatório falando um pouco sobre quando elas foram lançadas e pá, uns negócio bem básico mesmo, mas que dê pelo menos 1 parágrafo de 4 linhas pq precisa ficar bonito aqui, e assim dá um tamanho bom.</p>
+</div>
+  <hr>
+  <div class="esq"></div>
+  <hr>
+  <h2>2012</h2>
+  <img src="../../public/assets/saturno.png">
+</section>
+
+<section class="linha-dir">
+  <img src="../../public/assets/urano.png">
+  <h2>2018</h2>
+  <hr>
+  <div class="dir"></div>
+  <hr>
+  <div class="texto">
+  <h1 class="titulo">Voyager 2</h1>
+  <p>Dai um texto explicatório falando um pouco sobre quando elas foram lançadas e pá, uns negócio bem básico mesmo, mas que dê pelo menos 1 parágrafo de 4 linhas pq precisa ficar bonito aqui, e assim dá um tamanho bom.</p>
+</div>  
+
+</section>
+
+</center>
+
+<section class="descanso">
+<article>
+<hr><h1>Conquistas das Voyagers - Dados de 2024</h1><hr>
+</article>
+<article>
+<img src="../../public/assets/linhasonda.png" class="sonda-descanso" alt="Sonda Voyager I">
+</article>
+
+</section>
+
+
     <footer>
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
@@ -198,17 +294,17 @@ export default {
   content:"";
   position:absolute;
   border-top:0.5rem solid white;
-  width: 30rem;
+  width: 15rem;
   transform: rotate(90deg);
   transform-origin: 0% 0%;
 }
 
 article .cima{
   margin: 2rem 0 0 5rem;
-  height: 30rem;
+  height: 15rem;
 }
 
-center h1{
+center h1, .descanso h1{
   margin: 15% 0 0 0;
   color: white;
   text-align: center;
@@ -268,7 +364,48 @@ center img{
   border-radius: 10px;
 }
 
-.titulo-centro{
-  margin: 12% 0 0 5%;
+article h2{
+  margin: 0 0 0 5%;
+}
+
+.descanso{
+  text-align: center;
+  width: 100%;
+  margin: 2% 0 0 0;
+  background-color: #080E22;
+}
+
+.descanso article{
+  display: flex;
+  align-items: center;
+}
+
+.descanso article img{
+  margin: 5%;
+}
+
+.descanso hr{
+  height: 0.25rem;
+  background-color: white;
+  margin: 15% 1% 0 1%;
+  width: 18%;
+  border: none;
+  border-radius: 10px;
+}
+
+.descanso .sonda-descanso{
+  margin: 5% 5% 5% 25%; 
+}
+
+.descanso p{
+  text-align: justify;
+  margin: 5% 0 0 10%;
+  color: white;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.descanso div{
+  width: 55%;
 }
 </style>

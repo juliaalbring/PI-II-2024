@@ -124,4 +124,16 @@ border: none;
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .article{
+    display: block;
+    align-items: center;
+  }
+
+  .article div{
+    width: 50rem;
+    margin: 0;
+  }
+
+}
 </style>
