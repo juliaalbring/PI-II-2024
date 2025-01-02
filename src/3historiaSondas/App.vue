@@ -26,26 +26,31 @@
   <div class="seta"></div>
 
 <body>
-<section  class="intro" id="intro">
-<div class="div-esq">
+  <section class="secao" id="intro">
   <div>
-  <h1 class="title1">ORIGENS</h1>
-  <h2 class="title2">GUERRA FRIA</h2>
+  <article>
+  <div>
+  <h1>ORIGENS</h1>
+  <h2>GUERRA FRIA</h2></div>
+  <hr class="hr-horizontal">
+  </article>
+  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   </div>
-  <center><hr></center>
-</div>
-  <p class="text1">ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
-  <img src="../../public/assets/guerrafria.png" class="imagem1">
+  <img src="../../public/assets/guerrafria.png">
+</section>
 
-<div class="div-dir">
-  <center><hr></center>
+<section class="secao">
+  <img src="../../public/assets/carlsagan.png" class="img-desktop">
   <div>
-  <h1 class="title3">CARL SAGAN</h1>
-  <h2 class="title4">A FIGURA PRINCIPAL</h2>
+  <article>
+  <hr class="hr-horizontal">  
+  <div>
+  <h1 class="h1">CARL SAGAN</h1>
+  <h2 class="h2">A FIGURA PRINCIPAL</h2></div>
+  </article>
+  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   </div>
-</div>
-  <p class="text2">ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
-  <img src="../../public/assets/carlsagan.png" class="imagem2">
+  <img src="../../public/assets/carlsagan.png" class="img-mobile">
 </section>
 
   <img src="../../public/assets/DiscoOuro2.png" class="imagem3">
@@ -54,30 +59,33 @@
     <h1 class="title5">DISCO DE OURO</h1>
     <h1 class="title6">UMA MENSAGEM PARA O UNIVERSO</h1>
     </center>
+    <img src="../../public/assets/cosmos.png" class="imagem4-mobile">
   </div>
-  <div class="div2"><p class="text3">
-    ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+
+  <div class="div2"><p class="text3"><br>
+    ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper<br><br></p>
     <img src="../../public/assets/cosmos.png" class="imagem4">
   </div>
 
-<section class="grandtour">
+<section class="secao">
   <div>
   <h1>GRAND TOUR</h1>
   <h2>OBJETIVOS INICIAIS</h2>
   <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   </div>
-  <hr>
+  <hr class="hr-vertical">
   <img src="../../public/assets/cosmos2.png">
 </section>
 
-<section class="grandtour">
-  <img src="../../public/assets/voyagerhistoria.png">
-  <hr>
+<section class="secao">
+  <img src="../../public/assets/voyagerhistoria.png" class="img-desktop">
+  <hr class="hr-vertical">
   <div>
   <h1>SONDA VOYAGER</h1>
   <h2>EXTENSÃO DA MISSÃO</h2>
   <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
   </div>
+  <img src="../../public/assets/voyagerhistoria.png" class="img-mobile">
 </section>
 
 
@@ -126,71 +134,22 @@ body *{
     font-weight: 100;
 }
 
-.intro{
-  margin-left: 5%;
-  justify-content: space-evenly
-}
-
-.title1{
-    color: white;
-    font-size: 2.9rem;
-    margin-left: 5.5rem;
-    margin-top: 10rem;
-    font-weight: 235;
-}
-.title2{
-    color: #C898EC;
-    font-size: 1.8rem;
-    margin-left: 6rem;
-    margin-top: -0.4rem;
-    font-weight: 175;
-}
-.text1{
-    color: white;
-    font-size: 1.2rem;
-    margin-left: 5.5rem;
-    margin-top: 2rem;
-    width: 32rem;
-}
-.imagem1{
-    margin-left: 43.5rem;
-    margin-top: -28rem;
-    width: 35.5rem;
-    height: auto;
-}
-
-.title3{
-    color: white;
-    font-size: 2.9rem;
-    margin-left: 0.5rem;
-    margin-top: 5rem;
-    font-weight: 235;
-}
-.title4{
-    color: #C898EC;
-    font-size: 1.85rem;
-    margin-left: 0.9rem;
-    margin-top: -0.4rem;
-    font-weight: 175;
-}
-.text2{
-    color: white;
-    font-size: 1.2rem;
-    margin-left: 48.5rem;
-    margin-top: 2rem;
-    width: 32rem;
-}
-.imagem2{
-    margin-left: 5.5rem;
-    margin-top: -28rem;
-    width: 35.5rem;
-    height: auto;
+article{
+  display: flex;
 }
 
 .imagem3{
     margin-top: 5rem;
     width: 100%;
-    height: auto;
+    height: auto;  
+}
+
+.img-desktop{
+  display: block;
+}
+
+.img-mobile{
+    display: none;
 }
 
 .div1{
@@ -240,44 +199,23 @@ body *{
   margin-bottom: 5%
 }
 
-.div-esq hr{ 
-    height: 0.5625rem;
-    background-color: #C898EC;
-    margin: 90% 0 0 10%;
-    width: 13.125rem;
-    border: none;
-    border-radius: 10px;
+.imagem4-mobile{
+  display: none;
 }
 
-.div-dir hr{ 
-    height: 0.5625rem;
-    background-color: #C898EC;
-    margin: 55% 0 0 335%;
-    width: 13.125rem;
-    border: none;
-    border-radius: 10px;
-}
-
-.div-dir div{
-  margin-left: 45rem;
-}
-
-.div-esq, .div-dir{
-  display: flex;
-}
-
-.grandtour{
+.secao{
   text-align: center;
-  margin: 7% 2% 10% 4.2%;
+  margin: 7% 0 10% 0;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.grandtour img{
+.secao img{
   scale: 95%;
+  height: 100%;
 }
 
-.grandtour p{
+.secao p{
   text-align: justify;
   margin: 5% 5% 0 0;
   color: white;
@@ -285,7 +223,7 @@ body *{
   width: 90%;
 }
 
-.grandtour hr{
+.hr-vertical{
     width: 0.5625rem;
     background-color: #C898EC;
     margin: 1rem 0.8rem 0 0.8rem;
@@ -295,21 +233,100 @@ body *{
 
 }
 
-.grandtour h1{
+.hr-horizontal{ 
+    height: 0.5625rem;
+    background-color: #C898EC;
+    width: 11.125rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10% 0 0 2%;
+}
+
+article div .h1, article div .h2{
+  width: 150%;
+}
+
+.secao h1{
   color: white;
   font-size: 3.4rem;
   font-weight: 235;
   margin: 5% 0 0 0;
 }
-.grandtour h2{
+.secao h2{
     margin: 0;
     color: #C898EC;
     font-size: 2.1rem;
     font-weight: 175;
 }
 
-.grandtour div{
+.secao div{
   width: 45%;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 1300px) {
+  div, article, section, body, .secao, h1, h2, p{
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    margin: 1%;
+  }
+
+  hr, .hr-vertical{
+    display: none;
+  }
+
+  .img-desktop{
+    display: none;
+}
+
+.img-mobile{
+    display: block;
+}
+
+.div2{
+  width: 100%;
+  height: auto;
+}
+
+.imagem4{
+  display: none;
+}
+
+.imagem3{
+  margin: 0;
+}
+
+.imagem4-mobile{
+  display: block;
+  background-color: #080E22;
+  height: auto;
+}
+
+img{
+  margin: 0 0 70% 0;
+  height: 80%;
+  width: 80%;
+}
+
+.div1, .div2{
+  background-color: #080E22;
+  display: block;
+}
+
+.text3{
+  margin-top: 15%;
+  width: 80%;
+}
+
+.secao p{
+  width: 150%;
+}
+
+article div .h1, article div .h2{
+  width: 220%;
+  text-align: center;
+  margin: 0;
+}
 }
 </style>

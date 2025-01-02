@@ -47,9 +47,9 @@
     <h1>Links</h1>
     <hr>
     <ol>
-      <li>Contato</li>
-      <li>Contato</li>
-      <li>Contato</li>
+      <a href="https://google.com" target="_blank"><li>Contato</li></a>
+      <a href="https://google.com" target="_blank"><li>Contato</li></a>
+      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
@@ -125,15 +125,27 @@ border: none;
 }
 
 @media screen and (max-width: 1200px) {
+center{
+  width: 50%;
+  margin: 0%;
+  justify-content: center;
+}
+
   .article{
+    width: 50%;
     display: block;
-    align-items: center;
+    text-align: center;
+    margin: 0%;
   }
 
   .article div{
-    width: 50rem;
     margin: 0;
+    width: 300%;
+    justify-content: center;
   }
 
+  .article button{
+    width: 300%;
+  }
 }
 </style>
