@@ -15,17 +15,44 @@
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
       </a>
+
+      <a class="button" href="#popup1"><img src="../../public/assets/Menu.png"></a>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Menu</h2>
+            <a class="close" href="#">×</a>
+            <div class="content">
+              <a href="index">Página Principal<br><br></a>
+              <a href="linha">Linha do tempo<br><br></a>
+              <a href="historia">História das sondas<br><br></a>
+              <a href="forum">Fórum<br><br></a>
+              <a href="artigo">Artigo<br><br></a>
+              <a href="jogo" class="active">Jogo<br><br></a>
+              <a href="#">Perfil do usuário</a>
+            </div>
+            <div class="redes">
+              <h2>Nossas redes Sociais</h2>
+              <a href="https://instagram.com/beyond.glx" target="_blank">Instagram</a>
+              <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
+              <br>
+              <a href="https://google.com" target="_blank">Contato</a>
+            </div>
+          </div>
+        </div>
     </nav>
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
-      <button>↓</button>
+      <button><a href="#intro">↓</a></button>
     </section>
   </header>
 
+
   <div class="seta"></div>
 
-    <footer>
+  <footer>
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
       <hr>
@@ -37,9 +64,9 @@
     <h1>Links</h1>
     <hr>
     <ol>
-      <li>Contato</li>
-      <li>Contato</li>
-      <li>Contato</li>
+      <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
+      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>

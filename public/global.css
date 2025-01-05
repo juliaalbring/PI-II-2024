@@ -29,6 +29,10 @@ header {
     height: 40px;
 }
 
+.menu{
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -54,7 +58,7 @@ ul li a {
     font-family: "Onest", sans-serif;
 }
 
-ul li a.active {
+.active {
     border-bottom: 3px solid #C898EC;
     color: #C898EC;
 }
@@ -118,12 +122,91 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    display: none;
+  }
+  
+  .button:hover {
+    background: blue;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #555;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #fff;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+
+  .popup a{
+    color: #fff;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .popup .close:hover {
+    color: orange;
+  }
+  
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    margin-top: 10%;
+  }
+
+  .popup .redes{
+    margin-top: 10%;
+  }
+
 footer{
     margin-top: 2rem;
     background-color: black;
     height: 22rem;
     color: whitesmoke;
     display: flex;
+    height: max-content;
+    width: 100%;
 }
 
 footer p{
@@ -179,4 +262,57 @@ footer ol{
 
 footer li{
     margin-top: 1rem  ;
+}
+
+@media screen and (max-width: 1370px) {
+    .footer-left{
+        display: none;
+    }
+
+    footer img{
+        width: 180%;
+    }
+
+    footer h1{
+        font-size: 2rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+    footer hr{
+        width: 130%;
+    }
+
+    .hero{
+        width: max-content;
+        margin-left: 5%;
+    }
+
+    .hero p{
+        font-size: 1rem;
+        margin: 0%;
+    }
+
+    .hero h1{
+        margin-top: 25%;
+        font-size: 3rem;
+    }
+
+    .hero button{
+        margin-left: 33%;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .button{
+        display: block;
+    }
 }

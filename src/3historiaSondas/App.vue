@@ -15,6 +15,32 @@
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
       </a>
+
+      <a class="button" href="#popup1"><img src="../../public/assets/Menu.png"></a>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Menu</h2>
+            <a class="close" href="#">×</a>
+            <div class="content">
+              <a href="index">Página Principal<br><br></a>
+              <a href="linha">Linha do tempo<br><br></a>
+              <a href="historia" class="active">História das sondas<br><br></a>
+              <a href="forum">Fórum<br><br></a>
+              <a href="artigo">Artigo<br><br></a>
+              <a href="jogo">Jogo<br><br></a>
+              <a href="#">Perfil do usuário</a>
+            </div>
+            <div class="redes">
+              <h2>Nossas redes Sociais</h2>
+              <a href="https://instagram.com/beyond.glx" target="_blank">Instagram</a>
+              <br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
+              <br>
+              <a href="https://google.com" target="_blank">Contato</a>
+            </div>
+          </div>
+        </div>
     </nav>
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
@@ -25,7 +51,7 @@
 
   <div class="seta"></div>
 
-<body>
+<body class="body">
   <section class="secao" id="intro">
   <div>
   <article>
@@ -53,6 +79,7 @@
   <img src="../../public/assets/carlsagan.png" class="img-mobile">
 </section>
 
+<section class="quebra">
   <img src="../../public/assets/DiscoOuro2.png" class="imagem3">
   <div class="div1">
     <center class="centro-disco">
@@ -66,7 +93,7 @@
     ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper<br><br></p>
     <img src="../../public/assets/cosmos.png" class="imagem4">
   </div>
-
+</section>
 <section class="secao">
   <div>
   <h1>GRAND TOUR</h1>
@@ -265,14 +292,14 @@ article div .h1, article div .h2{
 }
 
 @media screen and (max-width: 1300px) {
-  div, article, section, body, .secao, h1, h2, p{
+  .body div, .body article, .body section, body, .body .secao, .body p{
     display: block;
     justify-items: center;
     justify-content: center;
     margin: 1%;
   }
 
-  hr, .hr-vertical{
+  .body hr, .hr-vertical{
     display: none;
   }
 
@@ -301,21 +328,26 @@ article div .h1, article div .h2{
   display: block;
   background-color: #080E22;
   height: auto;
+  width: 80%;
 }
 
-img{
+.secao img{
   margin: 0 0 70% 0;
   height: 80%;
   width: 80%;
 }
 
-.div1, .div2{
+.quebra{
   background-color: #080E22;
+  width: 100%;
+}
+
+.div1, .div2{
   display: block;
 }
 
 .text3{
-  margin-top: 15%;
+  margin-top: 20%;
   width: 80%;
 }
 
