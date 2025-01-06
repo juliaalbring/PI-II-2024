@@ -52,7 +52,7 @@
 
   <div class="seta"></div>
   
-  <section class="destaques">
+  <section class="destaques" id="intro">
         <h2>Destaques</h2>
         <div class="destaques-container">
             <div class="destaque">

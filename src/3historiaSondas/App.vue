@@ -60,7 +60,7 @@
   <h2>GUERRA FRIA</h2></div>
   <hr class="hr-horizontal">
   </article>
-  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  <p>A corrida espacial foi um dos marcos da Guerra Fria, simbolizando a disputa tecnológica e ideológica entre Estados Unidos e União Soviética. Em 1957, os soviéticos lançaram o Sputnik 1, o primeiro satélite artificial, marcando o início dessa competição. A resposta americana veio com a criação da NASA, em 1958, intensificando os esforços para superar os rivais. Em 1961, Yuri Gagarin tornou-se o primeiro homem a viajar ao espaço, fortalecendo o prestígio soviético. No entanto, os EUA alcançaram o ápice ao enviar o homem à Lua em 1969, com a missão Apollo 11. Essa corrida não apenas avançou a ciência, mas também foi usada como propaganda, refletindo o clima de rivalidade da época. A exploração espacial simbolizou o poderio das superpotências e deixou um legado de inovação para a humanidade. </p>
   </div>
   <img src="../../public/assets/guerrafria.png">
 </section>
@@ -74,7 +74,7 @@
   <h1 class="h1">CARL SAGAN</h1>
   <h2 class="h2">A FIGURA PRINCIPAL</h2></div>
   </article>
-  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  <p>Carl Sagan foi um renomado astrônomo, astrofísico e divulgador científico norte-americano, conhecido por popularizar a ciência para o grande público. Ele dedicou sua vida a explorar os mistérios do universo, contribuindo para estudos sobre planetas, astrobiologia e a busca por vida extraterrestre. Autor de obras marcantes como Cosmos e O Mundo Assombrado pelos Demônios, Sagan buscava despertar o senso crítico e a curiosidade científica. Ele também foi pioneiro no envio de mensagens ao espaço, como as placas das sondas Voyager. Sua paixão pelo cosmos inspirou milhões, defendendo a ciência como um farol para a humanidade. Para Sagan, o conhecimento científico era essencial para enfrentar os desafios do futuro. Sua visão enfatizava a interconexão entre todos os seres e a responsabilidade de preservar nosso planeta. </p>
   </div>
   <img src="../../public/assets/carlsagan.png" class="img-mobile">
 </section>
@@ -89,8 +89,8 @@
     <img src="../../public/assets/cosmos.png" class="imagem4-mobile">
   </div>
 
-  <div class="div2"><p class="text3"><br>
-    ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper<br><br></p>
+  <div class="div2"><p class="text3"><br><br><br>
+    O Disco de Ouro da Voyager é uma cápsula do tempo interestelar, criada para levar uma amostra representativa da diversidade cultural e biológica da Terra a possíveis formas de vida extraterrestre. Lançado em 1977 a bordo das sondas Voyager 1 e 2, o disco contém saudações em 55 línguas, sons naturais do planeta, como o canto dos pássaros e o barulho do vento, além de uma seleção de músicas que variam de Bach a canções populares africanas. Também há imagens que mostram a vida na Terra, desde paisagens até diagramas científicos. Ele foi idealizado por Carl Sagan e sua equipe, com a esperança de que, caso encontrado por civilizações alienígenas, o disco ofereça um vislumbre da riqueza cultural e científica da humanidade. <br><br></p>
     <img src="../../public/assets/cosmos.png" class="imagem4">
   </div>
 </section>
@@ -98,7 +98,7 @@
   <div>
   <h1>GRAND TOUR</h1>
   <h2>OBJETIVOS INICIAIS</h2>
-  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  <p>O Grand Tour foi uma prática educacional iniciada no século XVII, voltada para jovens aristocratas europeus, especialmente britânicos, com o intuito de complementar sua formação cultural. O objetivo principal era proporcionar uma imersão nas raízes da cultura clássica e renascentista, promovendo o contato direto com os grandes centros artísticos e intelectuais da época, como Itália, França e Alemanha. A viagem era vista como uma oportunidade de adquirir refinamento, aprendizado de línguas e apreciação das artes, além de estabelecer conexões sociais que consolidariam a posição dos jovens na elite europeia. O Grand Tour visava moldar futuros líderes cultos e preparados para os desafios da política e da sociedade.</p>
   </div>
   <hr class="hr-vertical">
   <img src="../../public/assets/cosmos2.png">
@@ -110,14 +110,14 @@
   <div>
   <h1>SONDA VOYAGER</h1>
   <h2>EXTENSÃO DA MISSÃO</h2>
-  <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+  <p>A extensão da missão da sonda Voyager, inicialmente lançada pela NASA em 1977 para explorar os planetas exteriores do Sistema Solar, representa um dos maiores feitos da exploração espacial. Após concluir com sucesso a análise de Júpiter, Saturno, Urano e Netuno, a missão entrou em uma fase estendida conhecida como Voyager Interstellar Mission (VIM), com o objetivo de estudar os limites do Sistema Solar e o espaço interestelar. Em 2012, a Voyager 1 se tornou a primeira sonda a atravessar a heliopausa, entrando oficialmente no espaço interestelar, enquanto a Voyager 2 seguiu em 2018. Mesmo operando com recursos de energia limitados e equipamentos ultrapassados, ambas as sondas continuam a enviar dados preciosos sobre o meio interestelar, ampliando nossa compreensão sobre as fronteiras da influência solar e as condições fora do nosso sistema planetário. </p>
   </div>
   <img src="../../public/assets/voyagerhistoria.png" class="img-mobile">
 </section>
 
 
 </body>
-    <footer>
+<footer>
     <div>
       <h1>Sobre a Beyond<span>Galaxy</span></h1>
       <hr>
@@ -129,9 +129,9 @@
     <h1>Links</h1>
     <hr>
     <ol>
-      <li>Contato</li>
-      <li>Contato</li>
-      <li>Contato</li>
+      <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
+      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
@@ -219,7 +219,7 @@ article{
     background-color: #080E22;
     justify-content: center;
     margin-top: -2.3rem;
-    height: 25rem;
+    height: auto;
 }
 
 .imagem4{
