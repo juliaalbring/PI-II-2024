@@ -141,187 +141,244 @@
 <script>
 export default {
   name: 'App',
-  components: {}
+  methods: {
+    changeContent(buttonIndex) {
+      const contentMap = {
+        1: {
+          title: 'A Grande Conjunção',
+          text: 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.",
+        },
+        },
+        2: {
+          title: 'O Disco de Ouro',
+          text: 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.'
+        },
+        3: {
+          title: 'Além do Sistema Solar',
+          text: "O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.",
+        },
+      };
+
+      const container = document.getElementById('text-container');
+      const title = document.getElementById('titulo');
+      const text = document.getElementById('texto');
+
+      if (contentMap[buttonIndex]) {
+        title.textContent = contentMap[buttonIndex].title;
+        text.textContent = contentMap[buttonIndex].text;
+        container.classList.remove('hidden');
+      }
+    }
+  }
 };
 </script>
 
 <style scoped>
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav .button {
+    display: block;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topics .allimagesdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hub {
+    flex-direction: column;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 .divtext1{
-  width: 170rem;
-  overflow: visible;
+width: 170rem;
+overflow: visible;
 }
 
 .image{
-    width: 30rem;
-    transition: 1s;
-    transform: scale(1.3, 1.3);
+  width: 30rem;
+  transition: 1s;
+  transform: scale(1.3, 1.3);
 }
 
 .imageclicked {
-    transform: scale(1, 1);
-    transition: 1s; 
+  transform: scale(1, 1);
+  transition: 1s; 
 }
 
 
 .allimagesdiv{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .singlediv {
-    height: 27rem;
-    width: 23rem;
-    margin-left: 3rem;
-    overflow: hidden;
-    transition: width 0.4s, margin-left 1s, border 1s; /* Transição para largura e margem */
+  height: 27rem;
+  width: 23rem;
+  margin-left: 3rem;
+  overflow: hidden;
+  transition: width 0.4s, margin-left 1s, border 1s; /* Transição para largura e margem */
 }
 
 .singlediv:hover {
-    width: 23rem;
-    border: 0.1rem solid rgb(255, 255, 255);
+  width: 23rem;
+  border: 0.1rem solid rgb(255, 255, 255);
 }
 
 .singlediv.active {
-    margin-left: 2rem;
-    width: 30rem;
-    border: 0.3rem solid rgb(255, 255, 255);
+  margin-left: 2rem;
+  width: 30rem;
+  border: 0.3rem solid rgb(255, 255, 255);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-  .intro {
-    margin-top: -32rem;
-    padding-top: 13rem;
-    padding-bottom: 90px;
-    clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 0, 0 0);
-    background-color: #080E22;
-    width: 100%;
-    padding-bottom: 90px;
-    display: flex;
+.intro {
+  margin-top: -32rem;
+  padding-top: 13rem;
+  padding-bottom: 90px;
+  clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 0, 0 0);
+  background-color: #080E22;
+  width: 100%;
+  padding-bottom: 90px;
+  display: flex;
 
-  }
+}
 
-  .txt {
-    width: 60%;
-  }
+.txt {
+  width: 60%;
+}
 
-  .intro p {
-    color: #F0F0FA;
-    font-size: 21px;
-    margin-top: 2%;
-    margin-left: 10%;
-    max-width: 600px;
-    font-weight: 300;
-  }
+.intro p {
+  color: #F0F0FA;
+  font-size: 21px;
+  margin-top: 2%;
+  margin-left: 10%;
+  max-width: 600px;
+  font-weight: 300;
+}
 
-  .intro h3 {
-    color: #F0F0FA;
-    font-size: 47px;
-    margin-top: 6%;
-    margin-left: 10%;
-  }
+.intro h3 {
+  color: #F0F0FA;
+  font-size: 47px;
+  margin-top: 6%;
+  margin-left: 10%;
+}
 
-  .intro span {
-    color: #2552EA;
-  }
+.intro span {
+  color: #2552EA;
+}
 
-  .intro img {
-    width: 35%;
-    height: auto;
-    border-radius: 15px;
-    object-fit: contain;
-  }
+.intro img {
+  width: 35%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: contain;
+}
 
-  .topics {
-    background-color: #111C41;
-    width: 100%;
-    padding-bottom: 90px;
-    display: flex; 
-    flex-direction: column; 
-    text-align: flex-start; 
-  }
+.topics {
+  background-color: #111C41;
+  width: 100%;
+  padding-bottom: 90px;
+  display: flex; 
+  flex-direction: column; 
+  text-align: flex-start; 
+}
 
-  .imagens {
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-  }
+.imagens {
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+}
 
-  .topics .topic-txt{
-    display: flex;
-    margin: 5%
-  }
+.topics .topic-txt{
+  display: flex;
+  margin: 5%
+}
 
-  .topics .topic-txt div{
-    width: 65%;
-  }
+.topics .topic-txt div{
+  width: 65%;
+}
 
-  .topics h1 {
-    color: #F0F0FA;
-    font-size: 3rem;
-    margin: 35px auto;
-    max-width: 800px;
-    line-height: 1.2; 
-    text-align: center;
-    overflow: hidden; 
-    font-weight: normal;
-  }
+.topics h1 {
+  color: #F0F0FA;
+  font-size: 3rem;
+  margin: 35px auto;
+  max-width: 800px;
+  line-height: 1.2; 
+  text-align: center;
+  overflow: hidden; 
+  font-weight: normal;
+}
 
-  .topics h3 {
-    color:#F0F0FA;
-    font-size: 40px;
-    margin-left: 6%;
-    margin-top: 5%;
-  }   
+.topics h3 {
+  color:#F0F0FA;
+  font-size: 40px;
+  margin-left: 6%;
+  margin-top: 5%;
+}   
 
-  .topics p {
-    color: #F0F0FA;
-    font-size: 1.3125rem;
-    line-height: 1.5;
-    margin: 0 6%;
-    padding: 0;
-    overflow: hidden;
-    text-align: justify;
-  }
+.topics p {
+  color: #F0F0FA;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  margin: 0 6%;
+  padding: 0;
+  overflow: hidden;
+  text-align: justify;
+}
 
-  .topics span {
-    text-decoration: underline;
-    text-decoration-color: #C898EC;
-    text-decoration-thickness: 6px;
-    border-radius: 15%;
-    text-align: center;
-    font-weight: bold;
-    color: #C898EC;
-  }
+.topics span {
+  text-decoration: underline;
+  text-decoration-color: #C898EC;
+  text-decoration-thickness: 6px;
+  border-radius: 15%;
+  text-align: center;
+  font-weight: bold;
+  color: #C898EC;
+}
 
-  .topics button{
-    background-color: #2552EA;
-    width: 250px;
-    height: 75px;
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 50px;
-    font-size: 22px;
-    cursor: pointer; 
-    font-family: Arial, sans-serif;
-    margin: 10%;
-  }
+.topics button{
+  background-color: #2552EA;
+  width: 250px;
+  height: 75px;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 50px;
+  font-size: 22px;
+  cursor: pointer; 
+  font-family: Arial, sans-serif;
+  margin: 10%;
+}
 
-  .topics a{
-    color: white;
-  }
+.topics a{
+  color: white;
+}
 
-  .topics hr{
-    width: 0.5625rem;
-    background-color: #870EE1;
-    margin: 0.5rem 0.2rem 0 0;
-    height: 22.625rem;
-    border: none;
-    border-radius: 10px;
+.topics hr{
+  width: 0.5625rem;
+  background-color: #870EE1;
+  margin: 0.5rem 0.2rem 0 0;
+  height: 22.625rem;
+  border: none;
+  border-radius: 10px;
 
-  }
+}
 
 .singlediv{
   width: 28%;
