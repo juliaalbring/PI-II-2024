@@ -6,6 +6,7 @@
 
 html{
     background-color: #111C41;
+    scroll-behavior: smooth;
 }
 
 header {

@@ -72,37 +72,29 @@
     </p>
 
     <div class="allimagesdiv">
-      <div class="singlediv">
+      <div class="singlediv" id="img-jupiter">
         <img class='image' src="../../public/assets/Jupiter.jpg"/>
       </div>
-      <div class="singlediv">
+      <div class="singlediv" id="img-voyager">
         <img class="image" src="../../public/assets/voyager2.png"/>
       </div>
-      <div class="singlediv">
+      <div class="singlediv" id="img-disco">
         <img class="image" src="../../public/assets/DiscoOuro.jpg"/>
       </div>
     </div>
 
     <div class="topic-txt">
       <hr>
-      <div>
-      <div id="text-container" class="hidden">
-          <h3 id="titulo">A Grande Conjunção</h3>
+      <div id="text-container">
+          <h3 id="titulo">Selecione uma imagem para ver seu tópico</h3>
           <div class="divtext1">
               <p id="texto"></p>
           </div>
       </div>
-
-      <div class="buttons-container">
-          <div class="singlediv" onclick="changeContent(1)">Botão 1</div>
-          <div class="singlediv" onclick="changeContent(2)">Botão 2</div>
-          <div class="singlediv" onclick="changeContent(3)">Botão 3</div>
-      </div>
-      </div>
+      <button><a href="historia">Veja mais</a></button>
 
       
       </div>
-      <button><a href="historia">Veja mais</a></button>
     </div>
   <div class="hub">
     <div class="sub">
@@ -139,38 +131,39 @@
 </template>
 
 <script>
+window.onload=function(){
+    function imgjupiter(){
+    title.innerHTML = 'A Grande Conjunção'
+    text.innerHTML = 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.'
+  }
+
+  function imgvoyager(){
+    text.innerHTML = 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.'
+    title.innerHTML = 'Além do Sistema Solar'
+  }
+
+  function imgdisco(){
+    title.innerHTML = 'O Disco de Ouro'
+    text.innerHTML = 'O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.'
+  }
+
+  const title = document.getElementById('titulo');
+  const text = document.getElementById('texto');
+    
+  const img1 = document.getElementById('img-jupiter');  
+  const img2 = document.getElementById('img-voyager');  
+  const img3 = document.getElementById('img-disco');  
+  
+  img1.addEventListener("click", imgjupiter)
+  img2.addEventListener("click", imgvoyager)
+  img3.addEventListener("click", imgdisco)
+}
+
 export default {
   name: 'App',
   methods: {
-    changeContent(buttonIndex) {
-      const contentMap = {
-        1: {
-          title: 'A Grande Conjunção',
-          text: 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.',
-        },
-        2: {
-          title: 'O Disco de Ouro',
-          text: 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.',
-        },
-        3: {
-          title: 'Além do Sistema Solar',
-          text: 'O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.',
-        },
-      };
-
-      const container = document.getElementById('text-container');
-      const title = document.getElementById('titulo');
-      const text = document.getElementById('texto');
-
-      if (contentMap[buttonIndex]) {
-        title.textContent = contentMap[buttonIndex].title;
-        text.textContent = contentMap[buttonIndex].text;
-        container.classList.remove('hidden');
-      }
-    }
   }
-};
-
+}
 </script>
 
 <style scoped>
@@ -230,7 +223,7 @@ overflow: visible;
   width: 23rem;
   margin-left: 3rem;
   overflow: hidden;
-  transition: width 0.4s, margin-left 1s, border 1s; /* Transição para largura e margem */
+  transition: width 0.4s, margin-left 1s, border 1s;
 }
 
 .singlediv:hover {
@@ -312,7 +305,7 @@ overflow: visible;
 }
 
 .topics .topic-txt div{
-  width: 65%;
+  width: 95%;
 }
 
 .topics h1 {
