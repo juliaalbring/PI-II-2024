@@ -39,11 +39,13 @@
           </div>
         </div>
     </nav>
+    <div class="div-hero">
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
       <button><a href="#intro">↓</a></button>
     </section>
+    </div>
   </header>
 
   <div class="seta"></div>
@@ -455,5 +457,5 @@ overflow: visible;
     width: 35%;
     margin-bottom: 7%;
   }
-
+  
 </style>
