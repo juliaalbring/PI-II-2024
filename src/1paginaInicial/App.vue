@@ -10,7 +10,6 @@
         <li><a href="historia">História</a></li>
         <li><a href="forum">Fórum</a></li>
         <li><a href="artigo">Artigo</a></li>
-        <li><a href="jogo">Jogo</a></li>
       </ul>
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
@@ -28,7 +27,6 @@
               <a href="historia">História das sondas<br><br></a>
               <a href="forum">Fórum<br><br></a>
               <a href="artigo">Artigo<br><br></a>
-              <a href="jogo">Jogo<br><br></a>
               <a href="#">Perfil do usuário</a>
             </div>
             <div class="redes">
@@ -37,7 +35,6 @@
               <br>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
               <br>
-              <a href="https://google.com" target="_blank">Contato</a>
             </div>
           </div>
         </div>
@@ -72,15 +69,15 @@
     </p>
 
     <div class="allimagesdiv">
-      <div class="singlediv" id="img-jupiter">
+      <a class="singlediv" id="img-jupiter" href="#titulo">
         <img class='image' src="../../public/assets/Jupiter.jpg"/>
-      </div>
-      <div class="singlediv" id="img-voyager">
+      </a>
+      <a class="singlediv" id="img-voyager" href="#titulo">
         <img class="image" src="../../public/assets/voyager2.png"/>
-      </div>
-      <div class="singlediv" id="img-disco">
+      </a>
+      <a class="singlediv" id="img-disco" href="#titulo">
         <img class="image" src="../../public/assets/DiscoOuro.jpg"/>
-      </div>
+      </a>
     </div>
 
     <div class="topic-txt">
@@ -97,18 +94,10 @@
       </div>
     </div>
   <div class="hub">
-    <div class="sub">
-      <h1>Nosso jogo</h1>
-      <p> O nosso jogo é uma forma interativa e lúdica de representar o trajeto das Sondas Voyagers ao longo do vasto espaço, destacando as descobertas e marcos importantes dessa jornada científica incrível. Ao longo do jogo, os jogadores podem explorar o percurso das sondas, aprender sobre os planetas e os fenômenos espaciais que elas encontraram, e vivenciar de perto as aventuras dessas missões históricas. Ele torna o aprendizado mais dinâmico, permitindo que os usuários sintam-se parte dessa exploração interplanetária, tornando o conteúdo não apenas informativo, mas também envolvente. A cada etapa, o jogador adquire conhecimento sobre o universo e a importância das sondas na expansão da nossa compreensão do cosmos. Ao jogar, você poderá se aprofundar nos detalhes da missão, ao mesmo tempo em que se diverte e descobre novos aspectos dessa grande jornada!
-</p>
-      <a href="jogo"><button>Saiba mais</button></a>
-    </div>
-    <div class="sub">
-      <h1>Galactic Hub</h1>
+      <h1>Fórum</h1>
       <p> O fórum do nosso site é o espaço ideal para todos os entusiastas das sondas Voyager se reunirem e trocarem ideias sobre as incríveis missões dessas naves. Aqui, os membros podem discutir os avanços científicos, as descobertas mais recentes e as teorias sobre o que essas sondas ainda podem nos revelar. Além disso, o fórum oferece um ambiente para compartilhar curiosidades, análises técnicas e até mesmo histórias pessoais relacionadas a esse marco da exploração espacial. Seja você um cientista, um estudante ou apenas um curioso, aqui é possível interagir com outros apaixonados pelo tema. O espaço é aberto para todos os tipos de contribuições, desde debates profundos até dicas e recursos sobre as Voyagers. Não importa o nível de conhecimento, o importante é a troca de informações e a celebração da exploração do desconhecido.</p>
       <a href="forum"><button>Saiba mais</button></a>
     </div>
-  </div>
 
   <footer>
     <div>
@@ -124,7 +113,6 @@
     <ol>
       <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
-      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
@@ -428,7 +416,6 @@ overflow: visible;
     padding-top: 13rem;
     clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 0 0, 0 0);
     background-color: #080e22; 
-    display: flex;
     text-align: center;
     justify-content: center;
     gap: 10%;
@@ -438,17 +425,19 @@ overflow: visible;
   .hub h1 {
     color: #2552EA;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin: 10% 0 3rem 0;
     text-align: center;
   }
 
   .hub p {
     color: #F0F0FA;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
+    width: 80%;
+    margin: 5% 0 0 10%;
   }
 
-  .sub button{
+  .hub button{
     background-color: #2552EA;
     color: white;
     width: 250px;

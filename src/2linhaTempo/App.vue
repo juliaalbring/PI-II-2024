@@ -10,7 +10,6 @@
         <li><a href="historia">História</a></li>
         <li><a href="forum">Fórum</a></li>
         <li><a href="artigo">Artigo</a></li>
-        <li><a href="jogo">Jogo</a></li>
       </ul>
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
@@ -28,7 +27,6 @@
               <a href="historia">História das sondas<br><br></a>
               <a href="forum">Fórum<br><br></a>
               <a href="artigo">Artigo<br><br></a>
-              <a href="jogo">Jogo<br><br></a>
               <a href="#">Perfil do usuário</a>
             </div>
             <div class="redes">
@@ -37,7 +35,6 @@
               <br>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
               <br>
-              <a href="https://google.com" target="_blank">Contato</a>
             </div>
           </div>
         </div>
@@ -48,7 +45,6 @@
       <button><a href="#intro">↓</a></button>
     </section>
   </header>
-
 
   <div class="seta"></div>
 
@@ -278,7 +274,6 @@
     <ol>
       <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
-      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
