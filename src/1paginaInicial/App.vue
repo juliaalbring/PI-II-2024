@@ -10,7 +10,6 @@
         <li><a href="historia">História</a></li>
         <li><a href="forum">Fórum</a></li>
         <li><a href="artigo">Artigo</a></li>
-        <li><a href="jogo">Jogo</a></li>
       </ul>
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
@@ -28,7 +27,6 @@
               <a href="historia">História das sondas<br><br></a>
               <a href="forum">Fórum<br><br></a>
               <a href="artigo">Artigo<br><br></a>
-              <a href="jogo">Jogo<br><br></a>
               <a href="#">Perfil do usuário</a>
             </div>
             <div class="redes">
@@ -37,16 +35,17 @@
               <br>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
               <br>
-              <a href="https://google.com" target="_blank">Contato</a>
             </div>
           </div>
         </div>
     </nav>
+    <div class="div-hero">
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
       <button><a href="#intro">↓</a></button>
     </section>
+    </div>
   </header>
 
   <div class="seta"></div>
@@ -72,51 +71,35 @@
     </p>
 
     <div class="allimagesdiv">
-      <div class="singlediv">
+      <a class="singlediv" id="img-jupiter" href="#titulo">
         <img class='image' src="../../public/assets/Jupiter.jpg"/>
-      </div>
-      <div class="singlediv">
+      </a>
+      <a class="singlediv" id="img-voyager" href="#titulo">
         <img class="image" src="../../public/assets/voyager2.png"/>
-      </div>
-      <div class="singlediv">
+      </a>
+      <a class="singlediv" id="img-disco" href="#titulo">
         <img class="image" src="../../public/assets/DiscoOuro.jpg"/>
-      </div>
+      </a>
     </div>
 
     <div class="topic-txt">
       <hr>
-      <div>
-      <div id="text-container" class="hidden">
-          <h3 id="titulo">A Grande Conjunção</h3>
+      <div id="text-container">
+          <h3 id="titulo">Selecione uma imagem para ver seu tópico</h3>
           <div class="divtext1">
               <p id="texto"></p>
           </div>
       </div>
-
-      <div class="buttons-container">
-          <div class="singlediv" onclick="changeContent(1)">Botão 1</div>
-          <div class="singlediv" onclick="changeContent(2)">Botão 2</div>
-          <div class="singlediv" onclick="changeContent(3)">Botão 3</div>
-      </div>
-      </div>
+      <button><a href="historia">Veja mais</a></button>
 
       
       </div>
-      <button><a href="historia">Veja mais</a></button>
     </div>
   <div class="hub">
-    <div class="sub">
-      <h1>Nosso jogo</h1>
-      <p> O nosso jogo é uma forma interativa e lúdica de representar o trajeto das Sondas Voyagers ao longo do vasto espaço, destacando as descobertas e marcos importantes dessa jornada científica incrível. Ao longo do jogo, os jogadores podem explorar o percurso das sondas, aprender sobre os planetas e os fenômenos espaciais que elas encontraram, e vivenciar de perto as aventuras dessas missões históricas. Ele torna o aprendizado mais dinâmico, permitindo que os usuários sintam-se parte dessa exploração interplanetária, tornando o conteúdo não apenas informativo, mas também envolvente. A cada etapa, o jogador adquire conhecimento sobre o universo e a importância das sondas na expansão da nossa compreensão do cosmos. Ao jogar, você poderá se aprofundar nos detalhes da missão, ao mesmo tempo em que se diverte e descobre novos aspectos dessa grande jornada!
-</p>
-      <a href="jogo"><button>Saiba mais</button></a>
-    </div>
-    <div class="sub">
-      <h1>Galactic Hub</h1>
+      <h1>Fórum</h1>
       <p> O fórum do nosso site é o espaço ideal para todos os entusiastas das sondas Voyager se reunirem e trocarem ideias sobre as incríveis missões dessas naves. Aqui, os membros podem discutir os avanços científicos, as descobertas mais recentes e as teorias sobre o que essas sondas ainda podem nos revelar. Além disso, o fórum oferece um ambiente para compartilhar curiosidades, análises técnicas e até mesmo histórias pessoais relacionadas a esse marco da exploração espacial. Seja você um cientista, um estudante ou apenas um curioso, aqui é possível interagir com outros apaixonados pelo tema. O espaço é aberto para todos os tipos de contribuições, desde debates profundos até dicas e recursos sobre as Voyagers. Não importa o nível de conhecimento, o importante é a troca de informações e a celebração da exploração do desconhecido.</p>
       <a href="forum"><button>Saiba mais</button></a>
     </div>
-  </div>
 
   <footer>
     <div>
@@ -132,45 +115,45 @@
     <ol>
       <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
-      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
 </template>
 
 <script>
+window.onload=function(){
+    function imgjupiter(){
+    title.innerHTML = 'A Grande Conjunção'
+    text.innerHTML = 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.'
+  }
+
+  function imgvoyager(){
+    text.innerHTML = 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.'
+    title.innerHTML = 'Além do Sistema Solar'
+  }
+
+  function imgdisco(){
+    title.innerHTML = 'O Disco de Ouro'
+    text.innerHTML = 'O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.'
+  }
+
+  const title = document.getElementById('titulo');
+  const text = document.getElementById('texto');
+    
+  const img1 = document.getElementById('img-jupiter');  
+  const img2 = document.getElementById('img-voyager');  
+  const img3 = document.getElementById('img-disco');  
+  
+  img1.addEventListener("click", imgjupiter)
+  img2.addEventListener("click", imgvoyager)
+  img3.addEventListener("click", imgdisco)
+}
+
 export default {
   name: 'App',
   methods: {
-    changeContent(buttonIndex) {
-      const contentMap = {
-        1: {
-          title: 'A Grande Conjunção',
-          text: 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.',
-        },
-        2: {
-          title: 'O Disco de Ouro',
-          text: 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.',
-        },
-        3: {
-          title: 'Além do Sistema Solar',
-          text: 'O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.',
-        },
-      };
-
-      const container = document.getElementById('text-container');
-      const title = document.getElementById('titulo');
-      const text = document.getElementById('texto');
-
-      if (contentMap[buttonIndex]) {
-        title.textContent = contentMap[buttonIndex].title;
-        text.textContent = contentMap[buttonIndex].text;
-        container.classList.remove('hidden');
-      }
-    }
   }
-};
-
+}
 </script>
 
 <style scoped>
@@ -230,7 +213,7 @@ overflow: visible;
   width: 23rem;
   margin-left: 3rem;
   overflow: hidden;
-  transition: width 0.4s, margin-left 1s, border 1s; /* Transição para largura e margem */
+  transition: width 0.4s, margin-left 1s, border 1s;
 }
 
 .singlediv:hover {
@@ -312,7 +295,7 @@ overflow: visible;
 }
 
 .topics .topic-txt div{
-  width: 65%;
+  width: 95%;
 }
 
 .topics h1 {
@@ -435,7 +418,6 @@ overflow: visible;
     padding-top: 13rem;
     clip-path: polygon(50% 22%, 100% 0, 100% 35%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 0 0, 0 0);
     background-color: #080e22; 
-    display: flex;
     text-align: center;
     justify-content: center;
     gap: 10%;
@@ -445,17 +427,19 @@ overflow: visible;
   .hub h1 {
     color: #2552EA;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin: 10% 0 3rem 0;
     text-align: center;
   }
 
   .hub p {
     color: #F0F0FA;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
+    width: 80%;
+    margin: 5% 0 0 10%;
   }
 
-  .sub button{
+  .hub button{
     background-color: #2552EA;
     color: white;
     width: 250px;
@@ -473,5 +457,5 @@ overflow: visible;
     width: 35%;
     margin-bottom: 7%;
   }
-
+  
 </style>

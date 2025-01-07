@@ -6,11 +6,12 @@
 
 html{
     background-color: #111C41;
+    scroll-behavior: smooth;
 }
 
 header {
     height: 93vh;
-    background-image: url('./assets/fundo-header.png');
+    background: url('./assets/fundo-header.png') no-repeat center   ;
     background-size: cover;
 }
 
@@ -287,7 +288,6 @@ footer li{
 
     .hero{
         width: max-content;
-        margin-left: 5%;
     }
 
     .hero p{
@@ -302,6 +302,14 @@ footer li{
 
     .hero button{
         margin-left: 33%;
+    }
+    
+    .div-hero{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     ul{

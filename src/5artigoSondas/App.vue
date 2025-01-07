@@ -10,7 +10,6 @@
         <li><a href="historia">História</a></li>
         <li><a href="forum">Fórum</a></li>
         <li><a href="artigo" class="active">Artigo</a></li>
-        <li><a href="jogo">Jogo</a></li>
       </ul>
       <a href="#" class="profile">
         <img src="../../public/assets/profile.png" alt="Ícone de um perfil" />
@@ -28,7 +27,6 @@
               <a href="historia">História das sondas<br><br></a>
               <a href="forum">Fórum<br><br></a>
               <a href="artigo" class="active">Artigo<br><br></a>
-              <a href="jogo">Jogo<br><br></a>
               <a href="#">Perfil do usuário</a>
             </div>
             <div class="redes">
@@ -37,18 +35,18 @@
               <br>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank">E-mail</a>
               <br>
-              <a href="https://google.com" target="_blank">Contato</a>
             </div>
           </div>
         </div>
     </nav>
+    <div class="div-hero">
     <section class="hero">
       <h1>Beyond<span>Galaxy</span></h1>
       <p>Descubra um dos maiores<br> projetos humanos para a <br>exploração espacial</p>
       <button><a href="#intro">↓</a></button>
     </section>
+    </div>
   </header>
-
 
   <div class="seta"></div>
 
@@ -56,7 +54,19 @@
     <div>
       <h1>NOSSO ARTIGO</h1>
       <h4>A MISSÃO MAIS LONGA DE TODOS OS TEMPOS: AS SONDAS VOYAGER</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+      <p>A exploração do espaço e seus meios, como as Sondas Voyager, são
+ tópicos muito recorrentes no dia a dia. Obtendo conhecimento desse fato,
+ buscou-se por meio deste artigo responder três principais questionamentos:
+ “Qual foi o objetivo principal das sondas ao serem lançadas pela NASA?”,
+ “O que é o Disco de Ouro e como ele funciona?” e também “Quais foram os
+ desafios técnicos encontrados pelos engenheiros ao manterem as sondas orbi
+tando?”. Dentre os objetos de pesquisa, os artigos científicos se sobressaem
+ já que grande parte das informações e dados são encontrados neles. A pes
+quisa analisa os desafios técnicos e operacionais enfrentados, as descobertas
+ científicas realizadas e as estratégias inovadoras empregadas para manter as
+ sondas operacionais, oferecendo recomendações para futuras missões espaci
+ais de longa duração. Concluindo assim que as Sondas Voyager forneceram
+ dados inéditos sobre esses planetas e seus satélites.</p>
     </div>
     <button id="button" v-on:click="download">Download PDF</button>
 
@@ -76,7 +86,6 @@
     <ol>
       <a href="https://instagram.com/beyond.glx" target="_blank"><li>Instagram</li></a>
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpdtccrQmBqXgfxfDsVClphnZFVqJtVRDRlQpDvrhPqvfRzKSbxFStQbzbkkQmwTBNjrVb" target="_blank"><li>E-mail</li></a>
-      <a href="https://google.com" target="_blank"><li>Contato</li></a>
     </ol>
   </div>
   </footer>
@@ -128,13 +137,17 @@ export default {
 
 .article button{
 border: none;
-  margin-top: 10%;
+  margin-top: 25%;
   background-color: #2552EA;
   width: 24.8rem;
   height: 7rem;
   border-radius: 60px;
   color: white;
   font-size: 1.4rem;
+}
+
+.article button:hover{
+  cursor: pointer;
 }
 
 .article h1{
