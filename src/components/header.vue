@@ -2,7 +2,7 @@
   <header>
     <nav>
       <a href="#" class="logo">
-        <img src="../assets/nave-logo.png" alt="Logo do site" />
+        <img :src="require('@/assets/nave-logo.png')" alt="Logo do site" />
       </a>
       <div>
         <v-btn to="/home" class="emptybutton">Página Principal</v-btn>
@@ -14,7 +14,7 @@
       <v-btn icon>
         <v-icon>mdi-account</v-icon>
       </v-btn>
-      <a class="button" href="#popup1"><img src="../assets/Menu.png"></a>
+      <a class="button" href="#popup1"><img :src="require('@/assets/Menu.png')"></a>
 
         <div id="popup1" class="overlay">
           <div class="popup">

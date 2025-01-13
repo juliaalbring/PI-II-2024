@@ -10,7 +10,7 @@
         Descubra também o legado do disco de ouro que as Voyager carregam consigo, um "mensageiro" da Terra com sons, imagens e informações sobre nossa civilização, destinado a possíveis formas de vida extraterrestre. 
       </p>
     </div>
-    <img src="../../assets/Voyager1.jpg">
+    <img :src="require('@/assets/Voyager1.jpg')">
   </div>
 
   <div class="topics">
@@ -23,13 +23,13 @@
 
     <div class="allimagesdiv">
       <a class="singlediv" id="img-jupiter" href="#titulo">
-        <img class='image' src="../../assets/Jupiter.jpg"/>
+        <img class='image' :src="require('@/assets/Jupiter.jpg')"/>
       </a>
       <a class="singlediv" id="img-voyager" href="#titulo">
-        <img class="image" src="../../assets/voyager2.png"/>
+        <img class="image" :src="require('@/assets/Voyager2.jpg')"S/>
       </a>
       <a class="singlediv" id="img-disco" href="#titulo">
-        <img class="image" src="../../assets/DiscoOuro.jpg"/>
+        <img class="image" :src="require('@/assets/DiscoOuro.jpg')"/>
       </a>
     </div>
 

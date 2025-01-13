@@ -11,11 +11,11 @@
     <div class="esq"></div>
     <hr>
     <h2>1977</h2>
-    <img src="../../public/assets/linhasonda.png">
+    <img :src="require('@/assets/linhasonda.png')">
   </section>
   
   <section class="linha-dir">
-    <img src="../../public/assets/jupiter.png">
+    <img :src="require('@/assets/jupiter.png')">
     <h2>1979</h2>
     <hr>
     <div class="dir"></div>
@@ -38,11 +38,11 @@
     <div class="esq"></div>
     <hr>
     <h2>1980</h2>
-    <img src="../../public/assets/saturno.png">
+    <img :src="require('@/assets/saturno.png')">
   </section>
   
   <section class="linha-dir">
-    <img src="../../public/assets/urano.png">
+    <img :src="require('@/assets/urano.png')">
     <h2>1986</h2>
     <hr>
     <div class="dir"></div>
@@ -66,7 +66,7 @@
     <div class="cima"></div>
     <hr>
     <h2>1989</h2>
-    <img src="../../public/assets/netuno.png">
+    <img :src="require('@/assets/netuno.png')">
   </section>
   
   <article>
@@ -84,7 +84,7 @@
     <h1>O Pálido Ponto Azul</h1>
     <p>O "Pálido Ponto Azul" é uma famosa fotografia da Terra tirada pela sonda Voyager 1 em 1990, a uma distância de cerca de 6 bilhões de quilômetros. A imagem mostra o planeta como um pequeno ponto azulado suspenso na vastidão do espaço. Inspirado por essa visão, o astrônomo Carl Sagan escreveu sobre a fragilidade e a insignificância da Terra no universo, ressaltando a importância de cuidar do nosso planeta. A foto se tornou um símbolo da humildade e da conexão humana com o cosmos.</p>
     </div>
-    <img src="../../public/assets/pontoazul.png">
+    <img :src="require('@/assets/pontoazul.png')">
   </article>
   
   <article>
@@ -92,7 +92,7 @@
   
   </article>
   <article>
-  <img src="../../public/assets/linhasonda.png" class="sonda-descanso" alt="Sonda Voyager I">
+  <img :src="require('@/assets/linhasonda.png')" class="sonda-descanso" alt="Sonda Voyager I">
   <div>
         <div class='step'>Distância Percorrida</div>
         <div class='step'>Tempo de Viagem</div>
@@ -128,11 +128,11 @@
     <div class="esq"></div>
     <hr>
     <h2>1998</h2>
-    <img src="../../public/assets/linhasonda.png">
+    <img :src="require('@/assets/linhasonda.png')">
   </section>
   
   <section class="linha-dir">
-    <img src="../../public/assets/jupiter.png">
+    <img :src="require('@/assets/jupiter.png')">
     <h2>2004</h2>
     <hr>
     <div class="dir"></div>
@@ -155,11 +155,11 @@
     <div class="esq"></div>
     <hr>
     <h2>2012</h2>
-    <img src="../../public/assets/saturno.png">
+    <img :src="require('@/assets/saturno.png')">
   </section>
   
   <section class="linha-dir">
-    <img src="../../public/assets/urano.png">
+    <img :src="require('@/assets/urano.png')">
     <h2>2018</h2>
     <hr>
     <div class="dir"></div>
@@ -184,7 +184,7 @@
   <hr><h1>Conquistas das Voyagers - Dados de 2024</h1><hr>
   </article>
   <article>
-  <img src="../../public/assets/linhasonda.png" class="sonda-descanso" alt="Sonda Voyager I">
+  <img class="sonda-descanso" :src="require('@/assets/linhasonda.png')" >
   <div>
         <div class='step'>Distância Percorrida</div>
         <div class='step'>Tempo de Viagem</div>
@@ -205,7 +205,7 @@
       <p>Mesmo a bilhões de quilômetros de distância e operando com tecnologia dos anos 1970, as sondas Voyager continuam enviando dados valiosos para a Terra, expandindo nosso conhecimento sobre o espaço profundo. Através de seus instrumentos ainda funcionais, elas estudam partículas interestelares, campos magnéticos e o comportamento das ondas de plasma além da heliosfera. Esses dados têm ajudado os cientistas a compreender melhor a interação do Sol com o espaço interestelar, além de oferecer insights únicos sobre o ambiente fora do sistema solar.</p> 
       <p>As Voyagers, portanto, não são apenas relíquias do passado, mas ativos vivos da ciência, ainda contribuindo para a compreensão de nossa posição no universo. Mesmo com energia limitada, cada bit de informação que enviam é um testemunho da engenhosidade humana e do poder da exploração. Suas descobertas continuam a moldar nossa visão do cosmos, reforçando a ideia de que sempre há mais a aprender além das fronteiras conhecidas. </p>
       </div>
-      <img src="../../public/assets/jupiter2.png" alt="Júpiter">
+      <img :src="require('@/assets/jupiter2.png')" alt="Júpiter">
     </article>
   
   </section>

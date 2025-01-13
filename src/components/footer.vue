@@ -272,7 +272,7 @@ footer li{
     margin-top: 1rem  ;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 672px) {
     .footer-left{
         display: none;
     }
