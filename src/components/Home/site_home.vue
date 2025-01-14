@@ -84,195 +84,6 @@ export default {
 
 
 <style scoped>
-/* Tela menor que 1024px */
-@media (max-width: 1024px) {
-  .singlediv {
-    width: 50%;
-    height: auto;
-    margin-left: 2rem;
-  }
-
-  .image {
-    width: 20rem;
-  }
-
-  .imagem1, .imagem2, .imagem3 {
-    margin-left: 3rem;
-    width: 70%;
-    height: auto;
-  }
-
-  .intro img {
-    width: 50%;
-  }
-
-  .intro p {
-    font-size: 18px;
-    margin-left: 5%;
-  }
-
-  .intro h3 {
-    font-size: 36px;
-    margin-left: 5%;
-  }
-
-  .topics h1 {
-    font-size: 2.5rem;
-    max-width: 90%;
-  }
-
-  .topics h3 {
-    font-size: 30px;
-    margin-left: 4%;
-  }
-
-  .topics p {
-    font-size: 1.125rem;
-    margin: 0 4%;
-  }
-
-  .hub h1 {
-    font-size: 2.5rem;
-  }
-
-  .hub p {
-    font-size: 1.25rem;
-    width: 90%;
-    margin: 5% auto;
-  }
-}
-
-/* Tela menor que 768px */
-@media (max-width: 768px) {
-  .singlediv {
-    width: 80%;
-    margin-left: 0;
-    height: auto;
-  }
-
-  .allimagesdiv {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .image {
-    width: 15rem;
-  }
-
-  .intro {
-    flex-direction: column;
-    margin-top: 0;
-    padding-top: 5rem;
-  }
-
-  .intro img {
-    width: 80%;
-  }
-
-  .intro p, .intro h3 {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .topics {
-    padding-bottom: 50px;
-  }
-
-  .topics h1 {
-    font-size: 2rem;
-  }
-
-  .topics h3 {
-    font-size: 24px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .topics p {
-    font-size: 1rem;
-    margin: 0 2%;
-    text-align: justify;
-  }
-
-  .hub h1 {
-    font-size: 2rem;
-  }
-
-  .hub p {
-    font-size: 1.125rem;
-  }
-}
-
-/* Tela menor que 480px */
-@media (max-width: 480px) {
-  .singlediv {
-    width: 90%;
-    height: auto;
-  }
-
-  .image {
-    width: 10rem;
-  }
-
-  .imagem1, .imagem2, .imagem3 {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .intro {
-    padding-top: 3rem;
-    margin-top: 0;
-  }
-
-  .intro img {
-    width: 100%;
-  }
-
-  .intro p {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .intro h3 {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .topics h1 {
-    font-size: 1.5rem;
-    margin: 20px auto;
-  }
-
-  .topics h3 {
-    font-size: 20px;
-  }
-
-  .topics p {
-    font-size: 0.875rem;
-    margin: 0 5%;
-  }
-
-  .hub h1 {
-    font-size: 1.75rem;
-  }
-
-  .hub p {
-    font-size: 1rem;
-    width: 90%;
-  }
-
-  .hub button {
-    width: 200px;
-    height: 60px;
-    font-size: 18px;
-  }
-
-  .sub {
-    width: 80%;
-  }
-}
-
 
 .hidden {
   display: none;
@@ -549,4 +360,145 @@ overflow: visible;
     width: 35%;
     margin-bottom: 7%;
   }
+
+  @media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    margin-top: -15rem;
+    padding-top: 8rem;
+  }
+
+  .intro img {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro p {
+    margin: 2rem auto;
+    font-size: 18px;
+  }
+
+  .allimagesdiv {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .singlediv {
+    width: 30%;
+    margin: 0;
+    height: 15rem;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1, 1.1);
+  }
+
+  .singlediv:hover {
+    width: 31%;
+    height: 15rem;
+  }
+
+  .topics h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .topics p {
+    font-size: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .divtext1 {
+    width: 100%;
+  }
+
+  .topics .topic-txt {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+
+  .topics hr {
+    width: 100%;
+    height: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .hub {
+    margin-top: -4rem;
+    padding-top: 8rem;
+  }
+
+  .hub p {
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+
+  .hub button {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h3 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .topics h1 {
+    font-size: 1.5rem;
+  }
+
+  .topics h3 {
+    font-size: 24px;
+  }
+
+  .hub h1 {
+    font-size: 2rem;
+  }
+
+  .hub p {
+    font-size: 1rem;
+  }
+
+  .topics button,
+  .hub button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .allimagesdiv {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .singlediv {
+    height: 12rem;
+  }
+
+  .singlediv:hover {
+    width: 31%;
+    height: 12rem;
+  }
+
+  .image {
+    transform: scale(1, 1);
+  }
+}
 </style>
