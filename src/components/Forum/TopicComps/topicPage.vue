@@ -11,7 +11,7 @@
     </v-card>
 
     <v-card class="pa-4" outlined>
-      <v-card-title class="text-h5 text-center">Criar Post</v-card-title>
+      <v-card-title class="text-h5 text-center">Comentar</v-card-title>
 
       <v-form @submit.prevent="submitForm" v-model="formValid">
         <v-text-field

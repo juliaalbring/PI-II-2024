@@ -61,7 +61,6 @@ export default {
   },
   methods: {
   submitForm() {
-    alert(this.token)
     axios.post(`/Topic/CreateTopic`, 
     {
         title_: this.TopicTitle,
@@ -70,6 +69,8 @@ export default {
           headers: {
             Authorization: this.token
         }
+      }) .then(response =>{
+        this.$router.push(`/acessTopic/${response.data.id}`)
       })
       }
   }
