@@ -1,5 +1,5 @@
 <template>
-  <v-container class="py-5" fluid>
+  <v-container fluid>
     <!-- Título e Descrição -->
     <v-row justify="center" class="mb-4">
       <v-col cols="12" md="8" class="text-center">
@@ -28,11 +28,12 @@
     <!-- Lista de Tópicos -->
     <v-row justify="center" class="mt-4">
       <v-col cols="12" md="8">
-        <v-list>
+        <v-list class="colorblacked">
           <v-list-item
             v-for="topic in topics"
             :key="topic.id"
             class="mb-4"
+            style="height: fit-content; border-radius: 5px;"
             two-line
             tile
             elevation="1"
@@ -41,11 +42,11 @@
           >
             <v-list-item-content>
               <v-list-item-title class="font-weight-medium mb-1">{{ topic.topicname }}</v-list-item-title>
-              <v-list-item-subtitle class="text-body-2">{{ topic.description }}</v-list-item-subtitle>
+              <v-list-item-subtitle class="text-body-2 colorblacked">{{ topic.description }}</v-list-item-subtitle>
             </v-list-item-content>
             <v-list-item-action>
               <v-btn small color="primary" class="rounded-0">Ver</v-btn>
-              <v-list-item-subtitle class="text-body-2 ml-2">Autor: {{ topic.user.username }}</v-list-item-subtitle>
+              <v-list-item-subtitle class="text-body-2 ml-2 colorblacked">Autor: {{ topic.user.username }}</v-list-item-subtitle>
             </v-list-item-action>
           </v-list-item>
         </v-list>
@@ -89,8 +90,12 @@ export default {
 </script>
 
 <style scoped>
-h1, p, .v-list-item-title, .v-list-item-subtitle {
-  color: #333 !important;
+h1, p{
+  color: #dcdcdc !important;
+}
+
+.colorblacked {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .v-btn {
@@ -120,11 +125,11 @@ h1, p, .v-list-item-title, .v-list-item-subtitle {
 }
 
 .text-body-1 {
-  color: #555;
+  color: #1d1d1d;
 }
 
 .text-body-2 {
-  color: #777;
+  color: #1b1b1b;
 }
 
 @media (max-width: 768px) {

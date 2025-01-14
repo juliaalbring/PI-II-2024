@@ -77,7 +77,14 @@
           dense
         ></v-text-field>
         
-        <v-btn class="mt-4 mb-10" type="submit" block color="primary">Submit</v-btn>
+        <v-btn 
+          class="mt-4 mb-10" 
+          type="submit" 
+          block 
+          color="primary" 
+        >
+          Submit
+        </v-btn>
       </v-form>
     </v-sheet>
     </v-col>
@@ -85,58 +92,67 @@
   </template>
   
   <script>
-  import axios from 'axios'
+  import axios from 'axios';
+  
   export default {
     name: 'v-regis-login-page',
-    data(){
-      return{
+    data() {
+      return {
         username_: '',
         password_: '',
         email_: '',
         passwordConf_: '',
         Username: '',
         Password: '',
-        PasswordConfRules: {
-          v 
-        }
-      }
+        activeTab: 0,
+        UsernameRules: [
+          v => !!v || 'O nome de usuário é obrigatório.',
+          v => v.length >= 3 || 'O nome de usuário deve ter pelo menos 3 caracteres.',
+        ],
+        EmailRules: [
+          v => !!v || 'O e-mail é obrigatório.',
+          v => /.+@.+\..+/.test(v) || 'Insira um e-mail válido.',
+        ],
+        PasswordRules: [
+          v => !!v || 'A senha é obrigatória.',
+          v => v.length >= 6 || 'A senha deve ter pelo menos 6 caracteres.',
+        ],
+        PasswordConfRules: [
+          v => !!v || 'A confirmação da senha é obrigatória.',
+          v => v === this.password_ || 'As senhas não coincidem.',
+        ],
+      };
     },
-
     methods: {
-      createUser(){
-          axios.post('/User/CreateUser', {
-            "username_": this.username_,
-            "password_": this.password_,
-            "email_" : this.email_
+      createUser() {
+        axios.post('/User/CreateUser', {
+          username_: this.username_,
+          password_: this.password_,
+          email_: this.email_,
+        })
+          .then(response => {
+            this.Username = this.username_;
+            this.Password = this.password_;
+            this.loginUser();
           })
-          .then(response =>{
-            alert('Foi')
-          })
-          .catch(error =>{
-            alert('Não foi')
-          })
+          .catch(error => {
+            alert('Erro ao criar a conta: ' + error);
+          });
       },
-
       loginUser() {
         axios.post('/User/UserLogin', {
-            "username_": this.Username, 
-            "password_": this.Password 
+          username_: this.Username,
+          password_: this.Password,
         })
-        .then(response => {
-            alert(response.data.webtoken);
+          .then(response => {
             localStorage.setItem('id', response.data.webtoken);
-            alert(localStorage.getItem('id'));
-        })
-        .catch(error => {
-            alert("Não foi");
-        });
-    } 
+            this.$router.push('/manage');
+          })
+          .catch(error => {
+            alert('Erro ao fazer login: ' + error);
+          });
+      },
     },
-    data() {
-      return {
-        activeTab: 0
-      };
-    }
-  }
+  };
   </script>
   

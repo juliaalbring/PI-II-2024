@@ -11,7 +11,7 @@
         <v-btn to="/forum" class="emptybutton">Fórum</v-btn>
         <v-btn to="/artigo" class="emptybutton">Artigo</v-btn>
       </div>
-      <v-btn icon>
+      <v-btn icon to="/regslog">
         <v-icon>mdi-account</v-icon>
       </v-btn>
       <a class="button" href="#popup1"><img :src="require('@/assets/Menu.png')"></a>
