@@ -1,26 +1,25 @@
 <template>
+  <center><section class="article" id="intro">
+    <div>
+      <h1>NOSSO ARTIGO</h1>
+      <h4>A MISSÃO MAIS LONGA DE TODOS OS TEMPOS: AS SONDAS VOYAGER</h4>
+      <p>A exploração do espaço e seus meios, como as Sondas Voyager, são
+  tópicos muito recorrentes no dia a dia. Obtendo conhecimento desse fato,
+  buscou-se por meio deste artigo responder três principais questionamentos:
+  “Qual foi o objetivo principal das sondas ao serem lançadas pela NASA?”,
+  “O que é o Disco de Ouro e como ele funciona?” e também “Quais foram os
+  desafios técnicos encontrados pelos engenheiros ao manterem as sondas orbi
+  tando?”. Dentre os objetos de pesquisa, os artigos científicos se sobressaem
+  já que grande parte das informações e dados são encontrados neles. A pes
+  quisa analisa os desafios técnicos e operacionais enfrentados, as descobertas
+  científicas realizadas e as estratégias inovadoras empregadas para manter as
+  sondas operacionais, oferecendo recomendações para futuras missões espaci
+  ais de longa duração. Concluindo assim que as Sondas Voyager forneceram
+  dados inéditos sobre esses planetas e seus satélites.</p>
+    </div>
+    <button id="button" v-on:click="download">Download PDF</button>
 
-<center><section class="article" id="intro">
-  <div>
-    <h1>NOSSO ARTIGO</h1>
-    <h4>A MISSÃO MAIS LONGA DE TODOS OS TEMPOS: AS SONDAS VOYAGER</h4>
-    <p>A exploração do espaço e seus meios, como as Sondas Voyager, são
-tópicos muito recorrentes no dia a dia. Obtendo conhecimento desse fato,
-buscou-se por meio deste artigo responder três principais questionamentos:
-“Qual foi o objetivo principal das sondas ao serem lançadas pela NASA?”,
-“O que é o Disco de Ouro e como ele funciona?” e também “Quais foram os
-desafios técnicos encontrados pelos engenheiros ao manterem as sondas orbi
-tando?”. Dentre os objetos de pesquisa, os artigos científicos se sobressaem
-já que grande parte das informações e dados são encontrados neles. A pes
-quisa analisa os desafios técnicos e operacionais enfrentados, as descobertas
-científicas realizadas e as estratégias inovadoras empregadas para manter as
-sondas operacionais, oferecendo recomendações para futuras missões espaci
-ais de longa duração. Concluindo assim que as Sondas Voyager forneceram
-dados inéditos sobre esses planetas e seus satélites.</p>
-  </div>
-  <button id="button" v-on:click="download">Download PDF</button>
-
-</section></center>
+  </section></center>
 </template>
 
 <script>
@@ -96,28 +95,34 @@ font-weight: normal;
 margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
-center{
-width: 50%;
-margin: 0%;
-justify-content: center;
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column; 
+    align-items: center;
+    width: 100%; 
+    margin: 0; 
+  }
+
+  .article div {
+    width: 90%; 
+    margin: 1rem 0; 
+  }
+
+  .article button {
+    width: 90%;
+    height: auto; 
+    font-size: 1.2rem; 
+    margin-top: 2rem;
+  }
+
+  .article h1 {
+    font-size: 2rem; 
+  }
+
+  .article h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem; 
+  }
 }
 
-.article{
-  width: 50%;
-  display: block;
-  text-align: center;
-  margin: -12rem 0 0 0;
-}
-
-.article div{
-  margin: 0;
-  width: 300%;
-  justify-content: center;
-}
-
-.article button{
-  width: 300%;
-}
-}
 </style>

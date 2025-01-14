@@ -258,7 +258,7 @@
     width: 45%;
     margin-left: 2%;
   }
-  
+    
   @media screen and (max-width: 1024px) {
     .body div, .body article, .body section, body, .body .secao, .body p{
       display: block;
@@ -329,5 +329,5 @@
     margin: 0;
   }
   }
-  </style>
+</style>
   

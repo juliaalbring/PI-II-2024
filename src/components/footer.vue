@@ -1,6 +1,27 @@
 <template>
-    <h1>aasaaaaa</h1>
-</template>
+    <footer>
+      <div class="footer-left">
+        <h1>Sobre Nós</h1>
+        <p>Explorando o universo da ciência e tecnologia</p>
+        <hr />
+      </div>
+      <div>
+        <h1>Contato</h1>
+        <p></p>
+        <p></p>
+        <hr />
+      </div>
+      <div>
+        <h1>Links Úteis</h1>
+        <ol>
+          <li><a href="#">Missões</a></li>
+          <li><a href="#">Pesquisas</a></li>
+          <li><a href="#">Artigos</a></li>
+        </ol>
+      </div>
+    </footer>
+  </template>
+  
 
 <script>
     export default{
@@ -8,7 +29,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 * {
     margin: 0;
     text-decoration: none;
