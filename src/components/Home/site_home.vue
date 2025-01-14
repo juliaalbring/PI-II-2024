@@ -21,25 +21,27 @@
       Suas viagens são um marco na busca pelo desconhecido e pelo entendimento do universo.
     </p>
 
+
+
     <div class="allimagesdiv">
-      <a class="singlediv" id="img-jupiter" href="#titulo">
-        <img class='image' :src="require('@/assets/Jupiter.jpg')"/>
+      <a class="singlediv" href="#titulo" @click="updateContent('A Grande Conjunção', jupiterText)">
+        <img class="image" :src="require('@/assets/Jupiter.jpg')" alt="Júpiter" />
       </a>
-      <a class="singlediv" id="img-voyager" href="#titulo">
-        <img class="image" :src="require('@/assets/Voyager2.jpg')"S/>
+      <a class="singlediv" href="#titulo" @click="updateContent('Além do Sistema Solar', voyagerText)">
+        <img class="image" :src="require('@/assets/Voyager2.jpg')" alt="Voyager" />
       </a>
-      <a class="singlediv" id="img-disco" href="#titulo">
-        <img class="image" :src="require('@/assets/DiscoOuro.jpg')"/>
+      <a class="singlediv" href="#titulo" @click="updateContent('O Disco de Ouro', discoText)">
+        <img class="image" :src="require('@/assets/DiscoOuro.jpg')" alt="Disco de Ouro" />
       </a>
     </div>
 
     <div class="topic-txt">
-      <hr>
+      <hr />
       <div id="text-container">
-          <h3 id="titulo">Selecione uma imagem para ver seu tópico</h3>
-          <div class="divtext1">
-              <p id="texto"></p>
-          </div>
+        <h3 id="titulo">{{ title }}</h3>
+        <div class="divtext1">
+          <p id="texto">{{ text }}</p>
+        </div>
       </div>
       <button><a href="historia">Veja mais</a></button>
 
@@ -56,66 +58,221 @@
 </template>
 
 <script>
-window.onload=function(){
-    function imgjupiter(){
-    title.innerHTML = 'A Grande Conjunção'
-    text.innerHTML = 'A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.'
-  }
-
-  function imgvoyager(){
-    text.innerHTML = 'A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.'
-    title.innerHTML = 'Além do Sistema Solar'
-  }
-
-  function imgdisco(){
-    title.innerHTML = 'O Disco de Ouro'
-    text.innerHTML = 'O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.'
-  }
-
-  const title = document.getElementById('titulo');
-  const text = document.getElementById('texto');
-    
-  const img1 = document.getElementById('img-jupiter');  
-  const img2 = document.getElementById('img-voyager');  
-  const img3 = document.getElementById('img-disco');  
-  
-  img1.addEventListener("click", imgjupiter)
-  img2.addEventListener("click", imgvoyager)
-  img3.addEventListener("click", imgdisco)
-}
-
 export default {
-  name: 'App',
+  data() {
+    return {
+      title: "Selecione uma imagem para ver seu tópico",
+      text: "",
+      jupiterText:
+        "A grande conjunção é um fenômeno astronômico raro e fascinante, marcado pelo alinhamento dos planetas Júpiter e Saturno em suas órbitas ao redor do Sol. Esse evento ocorre aproximadamente a cada 20 anos, quando os dois maiores planetas do Sistema Solar se aproximam visualmente no céu noturno, chegando a parecer quase um único ponto luminoso para observadores da Terra. Essa proximidade aparente se dá devido à diferença de tempo que cada planeta leva para completar uma volta ao redor do Sol: Júpiter, cerca de 12 anos, e Saturno, aproximadamente 30 anos.",
+      voyagerText:
+        "A Voyager 1, lançada em 1977, é a sonda espacial mais distante da Terra. Após explorar Júpiter e Saturno, revelou detalhes importantes, como a composição dos anéis de Saturno e a complexidade das luas Titã e Io. Em 2012, tornou-se o primeiro objeto humano a alcançar o espaço interestelar, atravessando a heliopausa. Carrega o Golden Record, um disco com sons, imagens e mensagens da Terra, destinado a possíveis civilizações extraterrestres. Continuando sua jornada, a Voyager 1 envia dados sobre o ambiente interestelar, contribuindo para a compreensão das fronteiras do Sistema Solar e da interação com o meio interestelar.",
+      discoText:
+        "O Disco de Ouro é um artefato cultural e científico levado pelas sondas Voyager 1 e 2, lançadas em 1977. Projetado por Carl Sagan e sua equipe, o disco é uma cápsula do tempo destinada a comunicar a diversidade da vida e da cultura na Terra a possíveis civilizações extraterrestres. Ele contém 116 imagens, saudações em 55 idiomas, sons da natureza, como o canto de pássaros e ondas do mar, além de uma seleção musical que inclui obras de Bach, Beethoven e músicas tradicionais de diversas culturas. O disco, feito de cobre banhado a ouro, está protegido por uma capa que traz instruções para sua reprodução e a localização da Terra no cosmos. Essa mensagem interestelar é um testemunho do desejo humano de conexão e exploração, representando nossa curiosidade e esperança de transcender as fronteiras do Sistema Solar.",
+    };
+  },
   methods: {
-  }
-}
+    updateContent(newTitle, newText) {
+      this.title = newTitle;
+      this.text = newText;
+    },
+  },
+};
+
+
 </script>
 
 
 <style scoped>
-    @media(max-width: 768px) {
-  header nav ul {
-    display: none;
+/* Tela menor que 1024px */
+@media (max-width: 1024px) {
+  .singlediv {
+    width: 50%;
+    height: auto;
+    margin-left: 2rem;
   }
 
-  header nav .button {
-    display: block;
+  .image {
+    width: 20rem;
+  }
+
+  .imagem1, .imagem2, .imagem3 {
+    margin-left: 3rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .intro img {
+    width: 50%;
+  }
+
+  .intro p {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+
+  .intro h3 {
+    font-size: 36px;
+    margin-left: 5%;
+  }
+
+  .topics h1 {
+    font-size: 2.5rem;
+    max-width: 90%;
+  }
+
+  .topics h3 {
+    font-size: 30px;
+    margin-left: 4%;
+  }
+
+  .topics p {
+    font-size: 1.125rem;
+    margin: 0 4%;
+  }
+
+  .hub h1 {
+    font-size: 2.5rem;
+  }
+
+  .hub p {
+    font-size: 1.25rem;
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+
+/* Tela menor que 768px */
+@media (max-width: 768px) {
+  .singlediv {
+    width: 80%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .allimagesdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .image {
+    width: 15rem;
   }
 
   .intro {
     flex-direction: column;
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .intro img {
+    width: 80%;
+  }
+
+  .intro p, .intro h3 {
+    margin-left: 0;
     text-align: center;
   }
 
-  .topics .allimagesdiv {
-    flex-direction: column;
-    align-items: center;
+  .topics {
+    padding-bottom: 50px;
   }
 
-  .hub {
-    flex-direction: column;
+  .topics h1 {
+    font-size: 2rem;
+  }
+
+  .topics h3 {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .topics p {
+    font-size: 1rem;
+    margin: 0 2%;
+    text-align: justify;
+  }
+
+  .hub h1 {
+    font-size: 2rem;
+  }
+
+  .hub p {
+    font-size: 1.125rem;
   }
 }
+
+/* Tela menor que 480px */
+@media (max-width: 480px) {
+  .singlediv {
+    width: 90%;
+    height: auto;
+  }
+
+  .image {
+    width: 10rem;
+  }
+
+  .imagem1, .imagem2, .imagem3 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .intro {
+    padding-top: 3rem;
+    margin-top: 0;
+  }
+
+  .intro img {
+    width: 100%;
+  }
+
+  .intro p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .intro h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .topics h1 {
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .topics h3 {
+    font-size: 20px;
+  }
+
+  .topics p {
+    font-size: 0.875rem;
+    margin: 0 5%;
+  }
+
+  .hub h1 {
+    font-size: 1.75rem;
+  }
+
+  .hub p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .hub button {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .sub {
+    width: 80%;
+  }
+}
+
 
 .hidden {
   display: none;
