@@ -260,6 +260,7 @@ nav ul li a:hover {
     margin-top: 10%;
 }
 
+
 @media (max-width: 768px) {
     header {
         height: 70vh;
@@ -314,3 +315,4 @@ nav ul li a:hover {
 }
 
 </style>
+
