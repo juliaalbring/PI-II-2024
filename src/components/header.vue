@@ -327,56 +327,149 @@ footer li{
     margin-top: 1rem  ;
 }
 
-@media screen and (max-width: 672px) {
-    .footer-left{
-        display: none;
-    }
 
-    footer img{
-        width: 180%;
-    }
+@media (max-width: 1024px) {
+  header {
+    height: 90vh;
+    background-size: contain;
+  }
 
-    footer h1{
-        font-size: 2rem;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    footer p{
-        font-size: 1rem;
-    }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    footer hr{
-        width: 130%;
-    }
+  ul li {
+    margin: 10px 0;
+  }
 
-    .hero{
-        width: max-content;
-        margin-left: 5%;
-    }
+  .hero h1 {
+    font-size: 60px;
+    margin-right: 0;
+    text-align: center;
+  }
 
-    .hero p{
-        font-size: 1rem;
-        margin: 0%;
-    }
+  .hero p {
+    font-size: 1.25rem;
+    margin-right: 0;
+  }
 
-    .hero h1{
-        margin-top: 25%;
-        font-size: 3rem;
-    }
+  .hero button {
+    margin: 20px auto;
+    font-size: 24px;
+  }
 
-    .hero button{
-        margin-left: 33%;
-    }
+  footer div {
+    width: 100%;
+    text-align: center;
+  }
 
-    ul{
-        display: none;
-    }
+  footer p {
+    font-size: 1.5rem;
+  }
 
-    .profile{
-        display: none;
-    }
-
-    .button{
-        display: block;
-    }
+  footer h1 {
+    font-size: 2.5rem;
+  }
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    font-size: 20px;
+    padding: 8px 16px;
+    width: auto;
+  }
+
+  footer img {
+    scale: 50%;
+    margin-left: 0;
+  }
+
+  footer div {
+    text-align: center;
+    margin: auto;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  footer ol {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    font-size: 18px;
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  footer h1 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer ol {
+    font-size: 1.2rem;
+  }
+}
+
 </style>
