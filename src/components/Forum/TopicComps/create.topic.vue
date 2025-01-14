@@ -83,4 +83,14 @@ export default {
 .v-card {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  .v-btn {
+    font-weight: normal; /* Ajusta a espessura da fonte para telas pequenas */
+  }
+
+  .v-card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduz a sombra para telas pequenas */
+  }
+}
 </style>

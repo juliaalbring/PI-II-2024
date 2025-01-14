@@ -126,4 +126,39 @@ h1, p, .v-list-item-title, .v-list-item-subtitle {
 .text-body-2 {
   color: #777;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; 
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+
+  .v-list-item-title, .v-list-item-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .v-btn {
+    font-size: 0.875rem;
+  }
+
+  .v-list-item {
+    margin: 8px 0;
+  }
+
+  .v-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .custom-margin-left {
+    margin-left: 8px;
+  }
+
+  .text-primary, .text-body-1, .text-body-2 {
+    font-size: 0.875rem;
+  }
+}
 </style>

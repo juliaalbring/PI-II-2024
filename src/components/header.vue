@@ -54,26 +54,25 @@ export default {
 </script>
 
 <style scoped>
-
-  .emptybutton{
+.emptybutton {
     background-color: rgba(0, 0, 0, 0);
-    color: white
-  }
+    color: white;
+}
 
-  * {
+* {
     margin: 0;
     text-decoration: none;
     font-family: 'Onest', sans-serif;
 }
 
-html{
+html {
     background-color: #111C41;
     scroll-behavior: smooth;
 }
 
 header {
     height: 110vh;
-    background-image: url('../assets/fundo-header.png');
+    background: url('../assets/fundo-header.png') no-repeat center;
     background-size: cover;
 }
 
@@ -85,14 +84,14 @@ header {
     height: 400px;
     clip-path: polygon(50% 25%, 100% 0, 100% 25%, 100% 25%, 50% 50%, 50% 50%, 50% 50%, 0 25%, 0 0);
     background-color: #1f2d67;
-  }
+}
 
 .logo img,
 .profile img {
     height: 40px;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
@@ -148,11 +147,11 @@ nav ul li a:hover {
 .hero button {
     background-color: transparent;
     color: white;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border: 2px solid white;
     border-radius: 25px;
-    font-size: 36px; 
-    cursor: pointer; 
+    font-size: 36px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,11 +167,10 @@ nav ul li a:hover {
 }
 
 .hero span {
-    font-weight: 700; 
-    color: #FFFFFF; 
+    font-weight: 700;
+    color: #FFFFFF;
     border-bottom: 4px solid #d8b4ff;
 }
-
 
 .hero p {
     font-size: 1.5rem;
@@ -180,7 +178,7 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
     font-family: "Onest", sans-serif;
-    margin-right: 30%; 
+    margin-right: 30%;
     line-height: 1.5;
     font-weight: 300;
 }
@@ -189,18 +187,18 @@ nav ul li a:hover {
     font-size: 1em;
     padding: 10px;
     color: #fff;
-    border-radius: 20px/50px;
+    border-radius: 20px / 50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
     display: none;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background: blue;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -210,14 +208,14 @@ nav ul li a:hover {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
+}
+
+.popup {
     margin: 70px auto;
     padding: 20px;
     background: #555;
@@ -225,19 +223,19 @@ nav ul li a:hover {
     width: 70%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
-  
-  .popup h2 {
+}
+
+.popup h2 {
     margin-top: 0;
     color: #fff;
     font-family: Tahoma, Arial, sans-serif;
-  }
+}
 
-  .popup a{
+.popup a {
     color: #fff;
-  }
-  
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -246,230 +244,73 @@ nav ul li a:hover {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-  }
-  
-  .popup .close:hover {
+}
+
+.popup .close:hover {
     color: orange;
-  }
-  
-  .popup .content {
+}
+
+.popup .content {
     max-height: 30%;
     overflow: auto;
     margin-top: 10%;
-  }
+}
 
-  .popup .redes{
+.popup .redes {
     margin-top: 10%;
-  }
-
-footer{
-    margin-top: 2rem;
-    background-color: black;
-    height: 22rem;
-    color: whitesmoke;
-    display: flex;
-    height: max-content;
-    width: 100%;
-}
-
-footer p{
-    margin: 1rem 0 1rem 1rem;
-    font-size: 2.1rem;
-}
-
-footer h1{
-    font-size: 3.125rem;
-    font-weight: normal;
-}
-
-footer span{
-    font-weight: bold;
-}
-
-footer hr{ 
-    height: 0.5625rem;
-    background-color: #870EE1;
-    margin-top: 0.5rem;
-    width: 22.625rem;
-    border: none;
-    border-radius: 10px;
-}
-
-footer img{
-    scale: 65%;
-    margin-left: -10%;
-}
-
-footer div{
-    padding: 1.5rem 0 0 1.5rem;
-    width: 45%;
-}
-
-footer a{
-    color: #FFFFFF;
-}
-
-.footer-left{
-    width: 30%;
-    margin-left: 30%;
-}
-
-.footer-left hr{
-    width: 9.4375rem;
-}
-
-footer ol{
-    list-style-type: disc;
-    font-size: 1.6rem;
-}
-
-footer li{
-    margin-top: 1rem  ;
-}
-
-
-@media (max-width: 1024px) {
-  header {
-    height: 90vh;
-    background-size: contain;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  ul li {
-    margin: 10px 0;
-  }
-
-  .hero h1 {
-    font-size: 60px;
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .hero p {
-    font-size: 1.25rem;
-    margin-right: 0;
-  }
-
-  .hero button {
-    margin: 20px auto;
-    font-size: 24px;
-  }
-
-  footer div {
-    width: 100%;
-    text-align: center;
-  }
-
-  footer p {
-    font-size: 1.5rem;
-  }
-
-  footer h1 {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 768px) {
-  header {
-    height: 70vh;
-  }
+    header {
+        height: 70vh;
+    }
 
-  .hero h1 {
-    font-size: 50px;
-  }
+    .hero h1 {
+        font-size: 50px;
+    }
 
-  .hero p {
-    font-size: 1.2rem;
-  }
+    .hero p {
+        font-size: 1.2rem;
+    }
 
-  .hero button {
-    font-size: 20px;
-    padding: 8px 16px;
-    width: auto;
-  }
-
-  footer img {
-    scale: 50%;
-    margin-left: 0;
-  }
-
-  footer div {
-    text-align: center;
-    margin: auto;
-  }
-
-  footer h1 {
-    font-size: 2rem;
-  }
-
-  footer p {
-    font-size: 1.2rem;
-  }
-
-  footer ol {
-    font-size: 1.4rem;
-  }
+    .hero button {
+        font-size: 20px;
+        padding: 8px 16px;
+        width: auto;
+    }
 }
 
 @media (max-width: 480px) {
-  header {
-    height: 60vh;
-  }
+    header {
+        height: 60vh;
+    }
 
-  .hero h1 {
-    font-size: 40px;
-  }
+    .hero h1 {
+        font-size: 40px;
+    }
 
-  .hero p {
-    font-size: 1rem;
-  }
+    .hero p {
+        font-size: 1rem;
+    }
 
-  .hero button {
-    font-size: 18px;
-    width: auto;
-    padding: 8px 16px;
-  }
+    .hero button {
+        font-size: 18px;
+        width: auto;
+        padding: 8px 16px;
+    }
 
-  nav {
-    flex-direction: column;
-  }
+    nav {
+        flex-direction: column;
+    }
 
-  ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  ul li {
-    margin: 5px 0;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  footer h1 {
-    font-size: 1.8rem;
-  }
-
-  footer p {
-    font-size: 1rem;
-  }
-
-  footer ol {
-    font-size: 1.2rem;
-  }
+    ul li {
+        margin: 5px 0;
+    }
 }
 
 </style>

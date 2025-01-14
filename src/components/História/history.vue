@@ -259,7 +259,7 @@
     margin-left: 2%;
   }
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1024px) {
     .body div, .body article, .body section, body, .body .secao, .body p{
       display: block;
       justify-items: center;

@@ -222,213 +222,221 @@
   </script>
   
   <style scoped>
-  .intro{
-    margin-top: -10rem;
-    color: white;
-    text-align: center;
-    font-size: 3.125rem;
-  }
-  
-  .center2{
-    margin: -30.65rem 0 0 -2.5rem;
-  }
-  
-  .linha-esq{
-    margin-left: -5%;
-  }
-  
-  .linha-dir{
-    margin-left: 17%;
-  }
-  
-  .esq{
-    margin: 10.5rem 0 0 -19rem;
-    border: none;
-    width:28rem;
-    height:20rem;
-    position:relative;
-  }
-  
-  .esq:after{
-    content:"";
-    position:absolute;
-    border-top:0.5rem solid white;
-    width: 30rem;
-    transform: rotate(70deg);
-    transform-origin: 0% 0%;
-  }
-  
-  .dir{
-    margin: 36.25rem -11.2rem 0 -30%;
-    border: none;
-    width:28rem;
-    height:20rem;
-    position:relative;
-  }
-  
-  .dir:after{
-    content:"";
-    position:absolute;
-    border-top:0.5rem solid white;
-    width: 30rem;
-    transform: rotate(-70deg);
-    transform-origin: 0% 0%;
-  }
-  
-  .cima{
-    margin: 10.5rem 0 0 -20.25rem;
-    border: none;
-    width:28rem;
-    height:20rem;
-    position:relative;
-  }
-  
-  .cima:after{
-    content:"";
-    position:absolute;
-    border-top:0.5rem solid white;
-    width: 15rem;
-    transform: rotate(90deg);
-    transform-origin: 0% 0%;
-  }
-  
-  article .cima{
-    margin: 2rem 0 0 5rem;
-    height: 15rem;
-  }
-  
-  center h1, .descanso h1{
-    margin: 15% 0 0 0;
-    color: white;
-    text-align: center;
-    font-size: 2.8rem;
-  }
-  
-  center p{
-    color: white;
-    font-size: 1.2rem;
-  }
-  
-  .linha-esq .texto{
-    width: 40%;
-    margin-right: 15%;
-  }
-  
-  .linha-dir .texto{
-    width: 30%;
-  }
-  
-  center section{
-    justify-content: space-evenly;
-    display: flex;
-  }
-  
-  center h2{
-    margin: 10% 0 0 -1%;
-    color: #C898EC;
-    text-align: center;
-    font-size: 2.8rem;
-  }
-  
-  center img{
-    margin-top: 10%;
-    height: 12.125rem;
-  }
-  
-  .linha-dir img{
-    margin: 5% 0 0 0;
-  }
-  
-  .linha-esq hr{
-    height: 0.25rem;
-    background-color: white;
-    margin: 11% 0 0 -20%;
-    width: 4rem;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  .linha-dir hr{ 
-    height: 0.25rem;
-    background-color: white;
-    margin: 10% 0% 0 10%;
-    width: 4rem;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  article h2{
-    margin: 0 0 0 5%;
-  }
-  
-  .descanso{
-    text-align: center;
-    width: 100%;
-    margin: 2% 0 0 0;
-    background-color: #080E22;
-  }
-  
-  .descanso article{
-    display: flex;
-    align-items: center;
-  }
-  
-  .descanso article img{
-    margin: 5%;
-  }
-  
-  .descanso hr{
-    height: 0.25rem;
-    background-color: white;
-    margin: 15% 1% 0 1%;
-    width: 18%;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  .descanso .sonda-descanso{
-    margin: 5%; 
-  }
-  
-  .descanso p{
-    text-align: justify;
-    margin: 5% 0 0 10%;
-    color: white;
-    font-size: 1.5rem;
-    width: 90%;
-  }
-  
-  .descanso div{
-    width: 55%;
-  }
-  
-  .step{
-    color: white;
-    font-size: 1.3rem;
-    border-bottom: 0.2rem solid white;
-  }
-  
-  .step:nth-child(1) {margin: 3% 0 0 0;}
-  .step:nth-child(2) {margin: 7% 0 0 5%;}
-  .step:nth-child(3) {margin: 8% 0 0 10%;}
-  
-  .quebra{
-    height: 0.25rem;
-    background-color: white;
-    width: 90%;
-    margin: 0 0 0 5%;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  .conclusao p{
-    width: 110%;
-    font-size: 1.3rem;
-    margin-left: 30%;
-  }
-  
-  .dir:nth-child(1){
-    height: 0rem;
-  }
+  .intro {
+  margin-top: -10rem;
+  color: white;
+  text-align: center;
+  font-size: 3.125rem;
+}
+
+.center2 {
+  margin: -30.65rem 0 0 -2.5rem;
+}
+
+.linha-esq {
+  margin-left: -5%;
+}
+
+.linha-dir {
+  margin-left: 17%;
+}
+
+.esq {
+  margin: 10.5rem 0 0 -19rem;
+  border: none;
+  width: 28rem;
+  height: 20rem;
+  position: relative;
+}
+
+.esq:after {
+  content: "";
+  position: absolute;
+  border-top: 0.5rem solid white;
+  width: 30rem;
+  transform: rotate(70deg);
+  transform-origin: 0% 0%;
+}
+
+.dir {
+  margin: 36.25rem -11.2rem 0 -30%;
+  border: none;
+  width: 28rem;
+  height: 20rem;
+  position: relative;
+}
+
+.dir:after {
+  content: "";
+  position: absolute;
+  border-top: 0.5rem solid white;
+  width: 30rem;
+  transform: rotate(-70deg);
+  transform-origin: 0% 0%;
+}
+
+.cima {
+  margin: 10.5rem 0 0 -20.25rem;
+  border: none;
+  width: 28rem;
+  height: 20rem;
+  position: relative;
+}
+
+.cima:after {
+  content: "";
+  position: absolute;
+  border-top: 0.5rem solid white;
+  width: 15rem;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+}
+
+article .cima {
+  margin: 2rem 0 0 5rem;
+  height: 15rem;
+}
+
+center h1, .descanso h1 {
+  margin: 15% 0 0 0;
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+center p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.linha-esq .texto {
+  width: 40%;
+  margin-right: 15%;
+}
+
+.linha-dir .texto {
+  width: 30%;
+}
+
+center section {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+center h2 {
+  margin: 10% 0 0 -1%;
+  color: #C898EC;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+center img {
+  margin-top: 10%;
+  height: 12.125rem;
+}
+
+.linha-dir img {
+  margin: 5% 0 0 0;
+}
+
+.linha-esq hr {
+  height: 0.25rem;
+  background-color: white;
+  margin: 11% 0 0 -20%;
+  width: 4rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.linha-dir hr {
+  height: 0.25rem;
+  background-color: white;
+  margin: 10% 0% 0 10%;
+  width: 4rem;
+  border: none;
+  border-radius: 10px;
+}
+
+article h2 {
+  margin: 0 0 0 5%;
+}
+
+.descanso {
+  text-align: center;
+  width: 100%;
+  margin: 2% 0 0 0;
+  background-color: #080E22;
+}
+
+.descanso article {
+  display: flex;
+  align-items: center;
+}
+
+.descanso article img {
+  margin: 5%;
+}
+
+.descanso hr {
+  height: 0.25rem;
+  background-color: white;
+  margin: 15% 1% 0 1%;
+  width: 18%;
+  border: none;
+  border-radius: 10px;
+}
+
+.descanso .sonda-descanso {
+  margin: 5%;
+}
+
+.descanso p {
+  text-align: justify;
+  margin: 5% 0 0 10%;
+  color: white;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.descanso div {
+  width: 55%;
+}
+
+.step {
+  color: white;
+  font-size: 1.3rem;
+  border-bottom: 0.2rem solid white;
+}
+
+.step:nth-child(1) {
+  margin: 3% 0 0 0;
+}
+
+.step:nth-child(2) {
+  margin: 7% 0 0 5%;
+}
+
+.step:nth-child(3) {
+  margin: 8% 0 0 10%;
+}
+
+.quebra {
+  height: 0.25rem;
+  background-color: white;
+  width: 90%;
+  margin: 0 0 0 5%;
+  border: none;
+  border-radius: 10px;
+}
+
+.conclusao p {
+  width: 110%;
+  font-size: 1.3rem;
+  margin-left: 30%;
+}
+
+.dir:nth-child(1) {
+  height: 0rem;
+}
   </style>
   

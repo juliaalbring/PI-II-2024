@@ -148,4 +148,18 @@ export default {
   font-size: 16px;
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .v-card {
+    border-radius: 8px;
+  }
+
+  .v-card-title {
+    font-size: 20px;
+  }
+
+  .v-card-text {
+    font-size: 14px;
+  }
+}
 </style>

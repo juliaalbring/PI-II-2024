@@ -78,4 +78,8 @@ export default {
     .updiv{
     margin-top: -15rem;
   }
+
+  .p, h2{
+    color:whitesmoke
+  }
 </style>
